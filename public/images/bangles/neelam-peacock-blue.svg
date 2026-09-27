@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad7" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="65%" stop-color="#EDF3F8"/>
+      <stop offset="100%" stop-color="#CFDFEC"/>
+    </radialGradient>
+
+    <!-- Peacock Blue Silk Gradient -->
+    <linearGradient id="blueSilkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#092038"/>
+      <stop offset="25%" stop-color="#10375C"/>
+      <stop offset="45%" stop-color="#1B558C"/>
+      <stop offset="55%" stop-color="#246BB0"/>
+      <stop offset="70%" stop-color="#144675"/>
+      <stop offset="100%" stop-color="#061626"/>
+    </linearGradient>
+
+    <linearGradient id="gold24k" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C7A28"/>
+      <stop offset="20%" stop-color="#E4C158"/>
+      <stop offset="40%" stop-color="#FFF3A8"/>
+      <stop offset="60%" stop-color="#D4A017"/>
+      <stop offset="85%" stop-color="#AA771C"/>
+      <stop offset="100%" stop-color="#6E4D0C"/>
+    </linearGradient>
+
+    <linearGradient id="kundanGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#FFFDE8" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#EADCB9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C2B280" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <pattern id="threadTextureBlue" width="4" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#CCE4FF" stroke-width="0.75" stroke-opacity="0.32"/>
+      <line x1="2" y1="0" x2="2" y2="20" stroke="#051626" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+
+    <filter id="softShadow7" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0B233D" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGrad7)"/>
+  <ellipse cx="400" cy="540" rx="330" ry="160" fill="#DDEBF5" opacity="0.7"/>
+  <ellipse cx="400" cy="550" rx="250" ry="75" fill="#0C243B" opacity="0.32" filter="url(#softShadow7)"/>
+
+  <!-- 6 DESIGNER PEACOCK BLUE BANGLES -->
+  <g id="peacockStack" transform="translate(0, -25)">
+    <ellipse cx="400" cy="370" rx="215" ry="68" fill="#07192C" stroke="#12406B" stroke-width="4"/>
+    
+    <path d="M 185,370 C 185,465 615,465 615,370 L 615,480 C 615,575 185,575 185,480 Z" fill="url(#blueSilkGrad)"/>
+    <path d="M 185,370 C 185,465 615,465 615,370 L 615,480 C 615,575 185,575 185,480 Z" fill="url(#threadTextureBlue)"/>
+
+    <path d="M 235,445 C 295,520 445,540 565,475" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" opacity="0.32"/>
+    <path d="M 295,475 C 355,535 435,535 505,495" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Gold separators for 6 bangles -->
+    <path d="M 185,390 C 185,485 615,485 615,390" fill="none" stroke="url(#gold24k)" stroke-width="3" stroke-dasharray="3,3"/>
+    <path d="M 185,410 C 185,505 615,505 615,410" fill="none" stroke="url(#gold24k)" stroke-width="3" stroke-dasharray="3,3"/>
+    <path d="M 185,430 C 185,525 615,525 615,430" fill="none" stroke="url(#gold24k)" stroke-width="3" stroke-dasharray="3,3"/>
+    <path d="M 185,450 C 185,545 615,545 615,450" fill="none" stroke="url(#gold24k)" stroke-width="3" stroke-dasharray="3,3"/>
+
+    <!-- Top & Bottom Rims -->
+    <path d="M 185,370 C 185,465 615,465 615,370" fill="none" stroke="url(#gold24k)" stroke-width="6"/>
+    <path d="M 185,480 C 185,575 615,575 615,480" fill="none" stroke="url(#gold24k)" stroke-width="6"/>
+
+    <!-- FLORAL KUNDAN CENTERPIECE -->
+    <g transform="translate(400, 485)">
+      <circle cx="0" cy="0" r="24" fill="url(#gold24k)"/>
+      <circle cx="0" cy="0" r="21" fill="#10375C"/>
+      <circle cx="0" cy="0" r="10" fill="url(#kundanGlass)"/>
+      <circle cx="0" cy="-14" r="5" fill="url(#kundanGlass)"/>
+      <circle cx="14" cy="0" r="5" fill="url(#kundanGlass)"/>
+      <circle cx="0" cy="14" r="5" fill="url(#kundanGlass)"/>
+      <circle cx="-14" cy="0" r="5" fill="url(#kundanGlass)"/>
+      <!-- Small dangling bell latkan -->
+      <path d="M 0,22 L 0,40" stroke="url(#gold24k)" stroke-width="2.5"/>
+      <circle cx="0" cy="44" r="5" fill="url(#gold24k)"/>
+      <circle cx="-5" cy="50" r="2.5" fill="url(#gold24k)"/>
+      <circle cx="5" cy="50" r="2.5" fill="url(#gold24k)"/>
+    </g>
+
+    <g transform="translate(310, 465)">
+      <circle cx="0" cy="0" r="15" fill="url(#gold24k)"/>
+      <circle cx="0" cy="0" r="7" fill="url(#kundanGlass)"/>
+    </g>
+    <g transform="translate(490, 465)">
+      <circle cx="0" cy="0" r="15" fill="url(#gold24k)"/>
+      <circle cx="0" cy="0" r="7" fill="url(#kundanGlass)"/>
+    </g>
+  </g>
+
+  <g transform="translate(400, 720)">
+    <rect x="-190" y="-22" width="380" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.92" stroke="#CFDFEC" stroke-width="1.5" filter="url(#softShadow7)"/>
+    <circle cx="-160" cy="0" r="7" fill="#10375C"/>
+    <text x="0" y="5" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" fill="#092038" letter-spacing="3" text-anchor="middle">
+      NEELAM ROYAL PEACOCK SILK BANGLES
+    </text>
+  </g>
+</svg>

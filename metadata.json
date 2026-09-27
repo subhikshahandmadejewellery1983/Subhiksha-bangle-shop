@@ -1,0 +1,6 @@
+{
+  "name": "AURA SILK - Handcrafted Bangles",
+  "description": "Subhiksha Homemade Jewellery - Exquisite handcrafted silk thread bangles, royal bridal choodas, kundan sets, and bespoke bridal jewellery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

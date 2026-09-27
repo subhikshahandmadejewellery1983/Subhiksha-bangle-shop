@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad10" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="65%" stop-color="#FDF4ED"/>
+      <stop offset="100%" stop-color="#EEDACD"/>
+    </radialGradient>
+
+    <!-- 24K Gold -->
+    <linearGradient id="gold24k" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C7A28"/>
+      <stop offset="20%" stop-color="#E4C158"/>
+      <stop offset="40%" stop-color="#FFF3A8"/>
+      <stop offset="60%" stop-color="#D4A017"/>
+      <stop offset="85%" stop-color="#AA771C"/>
+      <stop offset="100%" stop-color="#6E4D0C"/>
+    </linearGradient>
+
+    <!-- Navratna Rainbow Multicolor Silk Stack Gradient -->
+    <linearGradient id="rainbowSilk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B1824"/>    <!-- Crimson -->
+      <stop offset="12%" stop-color="#C2185B"/>   <!-- Rani Pink -->
+      <stop offset="25%" stop-color="#D95C24"/>   <!-- Tangerine -->
+      <stop offset="38%" stop-color="#D4A017"/>   <!-- Haldi Yellow -->
+      <stop offset="50%" stop-color="#114B3E"/>   <!-- Emerald Green -->
+      <stop offset="63%" stop-color="#7A9A8B"/>   <!-- Mint Sage -->
+      <stop offset="75%" stop-color="#10375C"/>   <!-- Peacock Blue -->
+      <stop offset="88%" stop-color="#4A154B"/>   <!-- Shahi Plum -->
+      <stop offset="100%" stop-color="#8B1824"/>  <!-- Crimson -->
+    </linearGradient>
+
+    <pattern id="threadTextureRainbow" width="4" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.35"/>
+      <line x1="2" y1="0" x2="2" y2="20" stroke="#000000" stroke-width="0.75" stroke-opacity="0.25"/>
+    </pattern>
+
+    <filter id="softShadow10" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3D1D10" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGrad10)"/>
+  <ellipse cx="400" cy="540" rx="330" ry="160" fill="#EFE0D5" opacity="0.7"/>
+  <ellipse cx="400" cy="550" rx="250" ry="75" fill="#3D150B" opacity="0.3" filter="url(#softShadow10)"/>
+
+  <!-- 16-PIECE RAINBOW SILK STACK -->
+  <g id="rainbowStack" transform="translate(0, -25)">
+    <ellipse cx="400" cy="365" rx="220" ry="70" fill="#2E0408" stroke="#680D16" stroke-width="4"/>
+    
+    <path d="M 180,365 C 180,455 620,455 620,365 L 620,485 C 620,575 180,575 180,485 Z" fill="url(#rainbowSilk)"/>
+    <path d="M 180,365 C 180,455 620,455 620,365 L 620,485 C 620,575 180,575 180,485 Z" fill="url(#threadTextureRainbow)"/>
+
+    <path d="M 230,440 C 290,520 450,545 570,470" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" opacity="0.35"/>
+    <path d="M 290,470 C 350,535 440,540 510,495" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- Gold separators for 16 bangles -->
+    <path d="M 180,373 C 180,463 620,463 620,373" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,381 C 180,471 620,471 620,381" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,389 C 180,479 620,479 620,389" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,397 C 180,487 620,487 620,397" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,405 C 180,495 620,495 620,405" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,413 C 180,503 620,503 620,413" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,421 C 180,511 620,511 620,421" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,429 C 180,519 620,519 620,429" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,437 C 180,527 620,527 620,437" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,445 C 180,535 620,535 620,445" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,453 C 180,543 620,543 620,453" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,461 C 180,551 620,551 620,461" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,469 C 180,559 620,559 620,469" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M 180,477 C 180,567 620,567 620,477" fill="none" stroke="url(#gold24k)" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Heavy Top and Bottom Gold Bead Rims -->
+    <path d="M 180,365 C 180,455 620,455 620,365" fill="none" stroke="url(#gold24k)" stroke-width="6"/>
+    <path d="M 180,485 C 180,575 620,575 620,485" fill="none" stroke="url(#gold24k)" stroke-width="6"/>
+
+    <!-- Electroplated Bead Clusters -->
+    <g id="beads">
+      <circle cx="210" cy="460" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="240" cy="485" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="280" cy="512" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="330" cy="535" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="400" cy="545" r="5" fill="url(#gold24k)"/>
+      <circle cx="470" cy="535" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="520" cy="512" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="560" cy="485" r="4.5" fill="url(#gold24k)"/>
+      <circle cx="590" cy="460" r="4.5" fill="url(#gold24k)"/>
+    </g>
+  </g>
+
+  <g transform="translate(400, 720)">
+    <rect x="-190" y="-22" width="380" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.92" stroke="#EEDACD" stroke-width="1.5" filter="url(#softShadow10)"/>
+    <circle cx="-160" cy="0" r="7" fill="#C2185B"/>
+    <text x="0" y="5" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" fill="#1A1816" letter-spacing="3" text-anchor="middle">
+      16-PIECE FESTIVE RAINBOW SILK STACK
+    </text>
+  </g>
+</svg>

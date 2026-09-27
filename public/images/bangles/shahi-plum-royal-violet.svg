@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background: Velvet & Botanical Ambience -->
+    <radialGradient id="purpleBoutiqueBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDFBF9"/>
+      <stop offset="50%" stop-color="#F2EAE0"/>
+      <stop offset="100%" stop-color="#DDCBC0"/>
+    </radialGradient>
+
+    <!-- Crimson Velvet Display Rod -->
+    <linearGradient id="purpleVelvetRod" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#42060B"/>
+      <stop offset="30%" stop-color="#880E1C"/>
+      <stop offset="55%" stop-color="#B2182B"/>
+      <stop offset="85%" stop-color="#6F0914"/>
+      <stop offset="100%" stop-color="#360309"/>
+    </linearGradient>
+
+    <!-- Deep Royal Purple Silk Thread -->
+    <linearGradient id="deepPurpleSilk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D0A30"/>
+      <stop offset="25%" stop-color="#5B1661"/>
+      <stop offset="50%" stop-color="#8E2496"/>
+      <stop offset="75%" stop-color="#5B1661"/>
+      <stop offset="100%" stop-color="#2D0A30"/>
+    </linearGradient>
+
+    <!-- Lilac / Lavender Silk Thread -->
+    <linearGradient id="lilacSilk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9381A5"/>
+      <stop offset="30%" stop-color="#CBB7DC"/>
+      <stop offset="50%" stop-color="#EBE2F5"/>
+      <stop offset="70%" stop-color="#CBB7DC"/>
+      <stop offset="100%" stop-color="#7C6B8D"/>
+    </linearGradient>
+
+    <!-- Amethyst Purple Crystal Gemstone -->
+    <linearGradient id="amethystGem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A148C"/>
+      <stop offset="35%" stop-color="#7B1FA2"/>
+      <stop offset="60%" stop-color="#BA68C8"/>
+      <stop offset="85%" stop-color="#6A1B9A"/>
+      <stop offset="100%" stop-color="#310D5C"/>
+    </linearGradient>
+
+    <!-- Mirror Gem Center -->
+    <linearGradient id="mirrorGem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#E0E7FF"/>
+      <stop offset="100%" stop-color="#C7D2FE"/>
+    </linearGradient>
+
+    <!-- Polished Gold Setting -->
+    <linearGradient id="violetGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#997320"/>
+      <stop offset="25%" stop-color="#DFB33E"/>
+      <stop offset="50%" stop-color="#FFF3A8"/>
+      <stop offset="75%" stop-color="#C99824"/>
+      <stop offset="100%" stop-color="#6E4D0C"/>
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="purpleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#240715" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="800" fill="url(#purpleBoutiqueBg)"/>
+
+  <!-- Velvet Display Rod (Horizontal) -->
+  <g id="velvetStandRod">
+    <ellipse cx="400" cy="570" rx="360" ry="40" fill="#1A0205" opacity="0.22" filter="blur(8px)"/>
+    <rect x="50" y="340" width="700" height="120" rx="60" fill="url(#purpleVelvetRod)"/>
+    <rect x="70" y="355" width="660" height="22" rx="11" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+
+  <!-- Bangle Stack Group (Front-Facing Perspective matching purple.webp) -->
+  <g id="purpleBangleAssembly" filter="url(#purpleShadow)" transform="translate(170, 160)">
+
+    <!-- 1. LEFTMOST KADA: Square Amethyst Crystal Baguettes in Gold Bezel -->
+    <g id="leftAmethystKada" transform="translate(0, 0)">
+      <rect x="15" y="90" width="45" height="340" rx="6" fill="url(#violetGold)"/>
+      <!-- Square Cut Crystals -->
+      <g fill="url(#amethystGem)" stroke="#FFF3A8" stroke-width="1.2">
+        <rect x="22" y="110" width="31" height="24" rx="3"/>
+        <rect x="22" y="142" width="31" height="24" rx="3"/>
+        <rect x="22" y="174" width="31" height="24" rx="3"/>
+        <rect x="22" y="206" width="31" height="24" rx="3"/>
+        <rect x="22" y="238" width="31" height="24" rx="3"/>
+        <rect x="22" y="270" width="31" height="24" rx="3"/>
+        <rect x="22" y="302" width="31" height="24" rx="3"/>
+        <rect x="22" y="334" width="31" height="24" rx="3"/>
+        <rect x="22" y="366" width="31" height="24" rx="3"/>
+        <rect x="22" y="398" width="31" height="24" rx="3"/>
+      </g>
+    </g>
+
+    <!-- 2. Dark Royal Purple Silk Thin Bangle -->
+    <g id="leftPurpleSilk1" transform="translate(68, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#deepPurpleSilk)"/>
+    </g>
+
+    <!-- 3. Lilac / Lavender Silk Thin Bangle -->
+    <g id="leftLilacSilk1" transform="translate(94, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#lilacSilk)"/>
+    </g>
+
+    <!-- 4. Dark Royal Purple Silk Thin Bangle 2 -->
+    <g id="leftPurpleSilk2" transform="translate(120, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#deepPurpleSilk)"/>
+    </g>
+
+    <!-- 5. CENTRAL STATEMENT BANGLE (Lilac with Teardrop Amethyst Petals & Diamond Mirrors) -->
+    <g id="centerLilacStatementBangle" transform="translate(148, 0)">
+      <!-- Lilac Silk Thread Core -->
+      <rect x="0" y="85" width="160" height="350" rx="12" fill="url(#lilacSilk)"/>
+      <!-- Gold Rim Filigree -->
+      <line x1="4" y1="90" x2="4" y2="430" stroke="url(#violetGold)" stroke-width="4"/>
+      <line x1="156" y1="90" x2="156" y2="430" stroke="url(#violetGold)" stroke-width="4"/>
+
+      <!-- Floral Teardrop Petal Rosettes -->
+      <g id="floralRosettes" transform="translate(80, 90)">
+        <!-- Rosette 1 (Top) -->
+        <g transform="translate(0, 45)">
+          <rect x="-10" y="-10" width="20" height="20" rx="2" fill="url(#mirrorGem)" stroke="url(#violetGold)" stroke-width="1.5" transform="rotate(45)"/>
+          <path d="M 0,-24 C -7,-14 -7,-8 0,-2 C 7,-8 7,-14 0,-24 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M 0,24 C -7,14 -7,8 0,2 C 7,8 7,14 0,24 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M -24,0 C -14,-7 -8,-7 -2,0 C -8,7 -14,7 -24,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M 24,0 C 14,-7 8,-7 2,0 C 8,7 14,7 24,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+        </g>
+
+        <!-- Rosette 2 (Upper Middle) -->
+        <g transform="translate(0, 115)">
+          <rect x="-12" y="-12" width="24" height="24" rx="3" fill="url(#mirrorGem)" stroke="url(#violetGold)" stroke-width="1.5" transform="rotate(45)"/>
+          <path d="M 0,-28 C -9,-16 -9,-9 0,-2 C 9,-9 9,-16 0,-28 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M 0,28 C -9,16 -9,9 0,2 C 9,9 9,16 0,28 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M -28,0 C -16,-9 -9,-9 -2,0 C -9,9 -16,9 -28,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M 28,0 C 16,-9 9,-9 2,0 C 9,9 16,9 28,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+        </g>
+
+        <!-- Rosette 3 (Centerpiece) -->
+        <g transform="translate(0, 185)">
+          <rect x="-14" y="-14" width="28" height="28" rx="3" fill="url(#mirrorGem)" stroke="url(#violetGold)" stroke-width="2" transform="rotate(45)"/>
+          <path d="M 0,-34 C -11,-20 -11,-11 0,-2 C 11,-11 11,-20 0,-34 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.8"/>
+          <path d="M 0,34 C -11,20 -11,11 0,2 C 11,11 11,20 0,34 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.8"/>
+          <path d="M -34,0 C -20,-11 -11,-11 -2,0 C -11,11 -20,11 -34,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.8"/>
+          <path d="M 34,0 C 20,-11 11,-11 2,0 C 11,11 20,11 34,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.8"/>
+        </g>
+
+        <!-- Rosette 4 (Lower Middle) -->
+        <g transform="translate(0, 255)">
+          <rect x="-12" y="-12" width="24" height="24" rx="3" fill="url(#mirrorGem)" stroke="url(#violetGold)" stroke-width="1.5" transform="rotate(45)"/>
+          <path d="M 0,-28 C -9,-16 -9,-9 0,-2 C 9,-9 9,-16 0,-28 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M 0,28 C -9,16 -9,9 0,2 C 9,9 9,16 0,28 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M -28,0 C -16,-9 -9,-9 -2,0 C -9,9 -16,9 -28,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+          <path d="M 28,0 C 16,-9 9,-9 2,0 C 9,9 16,9 28,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.5"/>
+        </g>
+
+        <!-- Rosette 5 (Bottom) -->
+        <g transform="translate(0, 315)">
+          <rect x="-10" y="-10" width="20" height="20" rx="2" fill="url(#mirrorGem)" stroke="url(#violetGold)" stroke-width="1.5" transform="rotate(45)"/>
+          <path d="M 0,-24 C -7,-14 -7,-8 0,-2 C 7,-8 7,-14 0,-24 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M 0,24 C -7,14 -7,8 0,2 C 7,8 7,14 0,24 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M -24,0 C -14,-7 -8,-7 -2,0 C -8,7 -14,7 -24,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+          <path d="M 24,0 C 14,-7 8,-7 2,0 C 8,7 14,7 24,0 Z" fill="url(#amethystGem)" stroke="url(#violetGold)" stroke-width="1.2"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 6. Dark Royal Purple Silk Thin Bangle 3 -->
+    <g id="rightPurpleSilk1" transform="translate(314, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#deepPurpleSilk)"/>
+    </g>
+
+    <!-- 7. Lilac / Lavender Silk Thin Bangle 2 -->
+    <g id="rightLilacSilk1" transform="translate(340, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#lilacSilk)"/>
+    </g>
+
+    <!-- 8. Dark Royal Purple Silk Thin Bangle 4 -->
+    <g id="rightPurpleSilk2" transform="translate(366, 0)">
+      <rect x="0" y="95" width="22" height="330" rx="4" fill="url(#deepPurpleSilk)"/>
+    </g>
+
+    <!-- 9. RIGHTMOST KADA: Square Amethyst Crystal Baguettes in Gold Bezel -->
+    <g id="rightAmethystKada" transform="translate(396, 0)">
+      <rect x="0" y="90" width="45" height="340" rx="6" fill="url(#violetGold)"/>
+      <g fill="url(#amethystGem)" stroke="#FFF3A8" stroke-width="1.2">
+        <rect x="7" y="110" width="31" height="24" rx="3"/>
+        <rect x="7" y="142" width="31" height="24" rx="3"/>
+        <rect x="7" y="174" width="31" height="24" rx="3"/>
+        <rect x="7" y="206" width="31" height="24" rx="3"/>
+        <rect x="7" y="238" width="31" height="24" rx="3"/>
+        <rect x="7" y="270" width="31" height="24" rx="3"/>
+        <rect x="7" y="302" width="31" height="24" rx="3"/>
+        <rect x="7" y="334" width="31" height="24" rx="3"/>
+        <rect x="7" y="366" width="31" height="24" rx="3"/>
+        <rect x="7" y="398" width="31" height="24" rx="3"/>
+      </g>
+    </g>
+
+  </g>
+</svg>

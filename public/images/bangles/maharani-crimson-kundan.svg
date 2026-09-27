@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background: Luxury Warm Amber & Gold Boutique Bokeh -->
+    <radialGradient id="bridalBoutiqueBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="45%" stop-color="#F7ECE0"/>
+      <stop offset="80%" stop-color="#E5D1BF"/>
+      <stop offset="100%" stop-color="#CBB5A0"/>
+    </radialGradient>
+
+    <!-- Warm Golden Bokeh Circles -->
+    <radialGradient id="bokehGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFEAA7" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#FDCB6E" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FDCB6E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Crimson Velvet Display Stand Rod -->
+    <linearGradient id="choodaVelvetRod" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A050B"/>
+      <stop offset="25%" stop-color="#880E1C"/>
+      <stop offset="55%" stop-color="#B71C1C"/>
+      <stop offset="80%" stop-color="#720D15"/>
+      <stop offset="100%" stop-color="#2D0308"/>
+    </linearGradient>
+
+    <!-- Pure Mulberry Crimson Red Silk Thread -->
+    <linearGradient id="crimsonChoodaSilk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#580811"/>
+      <stop offset="25%" stop-color="#9C1420"/>
+      <stop offset="50%" stop-color="#E52B3C"/>
+      <stop offset="75%" stop-color="#9C1420"/>
+      <stop offset="100%" stop-color="#4C060E"/>
+    </linearGradient>
+
+    <!-- Emerald Green Silk Spacer Accent -->
+    <linearGradient id="greenSpacerSilk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#04261C"/>
+      <stop offset="35%" stop-color="#0E5E47"/>
+      <stop offset="60%" stop-color="#1DB88A"/>
+      <stop offset="85%" stop-color="#0E5E47"/>
+      <stop offset="100%" stop-color="#04261C"/>
+    </linearGradient>
+
+    <!-- 24K Royal Kundan Gold Foil -->
+    <linearGradient id="bridalGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94701C"/>
+      <stop offset="25%" stop-color="#DFB33E"/>
+      <stop offset="50%" stop-color="#FFF5B8"/>
+      <stop offset="75%" stop-color="#C99824"/>
+      <stop offset="100%" stop-color="#694807"/>
+    </linearGradient>
+
+    <!-- Uncut Jadau Hydro Kundan Stone -->
+    <linearGradient id="kundanStone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FFFDF2"/>
+      <stop offset="80%" stop-color="#ECE2C8"/>
+      <stop offset="100%" stop-color="#C5B595"/>
+    </linearGradient>
+
+    <!-- Ruby Red Faceted Gem -->
+    <linearGradient id="rubyGem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#670510"/>
+      <stop offset="40%" stop-color="#B71C1C"/>
+      <stop offset="70%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#4A0209"/>
+    </linearGradient>
+
+    <!-- Shadow -->
+    <filter id="choodaShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#2D0308" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bridalBoutiqueBg)"/>
+
+  <!-- Warm Bokeh Circles in Background -->
+  <circle cx="200" cy="180" r="120" fill="url(#bokehGlow)"/>
+  <circle cx="650" cy="220" r="140" fill="url(#bokehGlow)"/>
+  <circle cx="120" cy="380" r="90" fill="url(#bokehGlow)"/>
+  <circle cx="700" cy="400" r="110" fill="url(#bokehGlow)"/>
+
+  <!-- Velvet Display Rod (Horizontal) with Gold Caps -->
+  <g id="displayRod">
+    <ellipse cx="400" cy="580" rx="360" ry="40" fill="#1C0205" opacity="0.28" filter="blur(8px)"/>
+    <rect x="60" y="345" width="680" height="110" rx="55" fill="url(#choodaVelvetRod)"/>
+    <rect x="80" y="360" width="640" height="20" rx="10" fill="#FFFFFF" opacity="0.18"/>
+    <!-- Left Gold Stand Cap -->
+    <ellipse cx="65" cy="400" rx="22" ry="55" fill="url(#bridalGold)"/>
+    <!-- Right Gold Stand Cap -->
+    <ellipse cx="735" cy="400" rx="22" ry="55" fill="url(#bridalGold)"/>
+  </g>
+
+  <!-- Full Symmetrical Bridal Chooda Stack Assembly (Matching Red (1).webp) -->
+  <g id="choodaStack" filter="url(#choodaShadow)" transform="translate(100, 160)">
+
+    <!-- 1. LEFT FLANKING KADA: Kundan Floral Floret with Red Crystals -->
+    <g id="leftOuterKada" transform="translate(40, 0)">
+      <rect x="0" y="80" width="45" height="360" rx="8" fill="url(#crimsonChoodaSilk)"/>
+      <line x1="4" y1="85" x2="4" y2="435" stroke="url(#bridalGold)" stroke-width="3"/>
+      <line x1="41" y1="85" x2="41" y2="435" stroke="url(#bridalGold)" stroke-width="3"/>
+      <!-- Kundan Florets -->
+      <g stroke="url(#bridalGold)" stroke-width="1.2">
+        <circle cx="22" cy="115" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="145" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 152)"/>
+        <circle cx="22" cy="190" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="225" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 232)"/>
+        <circle cx="22" cy="270" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="305" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 312)"/>
+        <circle cx="22" cy="350" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="385" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 392)"/>
+      </g>
+    </g>
+
+    <!-- 2. Emerald Green Silk Spacer 1 -->
+    <g id="leftGreenSpacer1" transform="translate(90, 0)">
+      <rect x="0" y="85" width="14" height="350" rx="3" fill="url(#greenSpacerSilk)"/>
+    </g>
+
+    <!-- 3. Kundan Navette Flower Bangle (Left) -->
+    <g id="leftKundanNavetteBangle" transform="translate(110, 0)">
+      <rect x="0" y="75" width="60" height="370" rx="10" fill="url(#crimsonChoodaSilk)"/>
+      <!-- Symmetrical Kundan Flower Medallions -->
+      <g stroke="url(#bridalGold)" stroke-width="1.5">
+        <g transform="translate(30, 130)">
+          <circle cx="0" cy="0" r="6" fill="url(#rubyGem)"/>
+          <path d="M 0,-16 C -5,-9 -5,-5 0,-1 C 5,-5 5,-9 0,-16 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,16 C -5,9 -5,5 0,1 C 5,5 5,9 0,16 Z" fill="url(#kundanStone)"/>
+          <path d="M -16,0 C -9,-5 -5,-5 -1,0 C -5,5 -9,5 -16,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 16,0 C 9,-5 5,-5 1,0 C 5,5 9,5 16,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 220)">
+          <circle cx="0" cy="0" r="7" fill="url(#rubyGem)"/>
+          <path d="M 0,-18 C -6,-10 -6,-6 0,-1 C 6,-6 6,-10 0,-18 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,18 C -6,10 -6,6 0,1 C 6,6 6,10 0,18 Z" fill="url(#kundanStone)"/>
+          <path d="M -18,0 C -10,-6 -6,-6 -1,0 C -6,6 -10,6 -18,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 18,0 C 10,-6 6,-6 1,0 C 6,6 10,6 18,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 310)">
+          <circle cx="0" cy="0" r="7" fill="url(#rubyGem)"/>
+          <path d="M 0,-18 C -6,-10 -6,-6 0,-1 C 6,-6 6,-10 0,-18 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,18 C -6,10 -6,6 0,1 C 6,6 6,10 0,18 Z" fill="url(#kundanStone)"/>
+          <path d="M -18,0 C -10,-6 -6,-6 -1,0 C -6,6 -10,6 -18,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 18,0 C 10,-6 6,-6 1,0 C 6,6 10,6 18,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 400)">
+          <circle cx="0" cy="0" r="6" fill="url(#rubyGem)"/>
+          <path d="M 0,-16 C -5,-9 -5,-5 0,-1 C 5,-5 5,-9 0,-16 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,16 C -5,9 -5,5 0,1 C 5,5 5,9 0,16 Z" fill="url(#kundanStone)"/>
+          <path d="M -16,0 C -9,-5 -5,-5 -1,0 C -5,5 -9,5 -16,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 16,0 C 9,-5 5,-5 1,0 C 5,5 9,5 16,0 Z" fill="url(#kundanStone)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. Micro Ruby Stone Eternity Chain Bangles (Left Stack) -->
+    <g id="leftRubyStack" transform="translate(176, 0)">
+      <rect x="0" y="85" width="22" height="350" rx="4" fill="url(#crimsonChoodaSilk)"/>
+      <g fill="url(#rubyGem)" stroke="url(#bridalGold)" stroke-width="0.8">
+        <circle cx="11" cy="100" r="3.5"/><circle cx="11" cy="115" r="3.5"/><circle cx="11" cy="130" r="3.5"/><circle cx="11" cy="145" r="3.5"/><circle cx="11" cy="160" r="3.5"/><circle cx="11" cy="175" r="3.5"/><circle cx="11" cy="190" r="3.5"/><circle cx="11" cy="205" r="3.5"/><circle cx="11" cy="220" r="3.5"/><circle cx="11" cy="235" r="3.5"/><circle cx="11" cy="250" r="3.5"/><circle cx="11" cy="265" r="3.5"/><circle cx="11" cy="280" r="3.5"/><circle cx="11" cy="295" r="3.5"/><circle cx="11" cy="310" r="3.5"/><circle cx="11" cy="325" r="3.5"/><circle cx="11" cy="340" r="3.5"/><circle cx="11" cy="355" r="3.5"/><circle cx="11" cy="370" r="3.5"/><circle cx="11" cy="385" r="3.5"/><circle cx="11" cy="400" r="3.5"/><circle cx="11" cy="415" r="3.5"/>
+      </g>
+    </g>
+
+    <!-- 5. Emerald Green Silk Spacer 2 -->
+    <g id="leftGreenSpacer2" transform="translate(204, 0)">
+      <rect x="0" y="85" width="14" height="350" rx="3" fill="url(#greenSpacerSilk)"/>
+    </g>
+
+    <!-- 6. CENTRAL JADAU CHOODA STATEMENT KADA (Double Wide Stack with Diamond Kundan) -->
+    <g id="centerChoodaKada" transform="translate(224, 0)">
+      <!-- Pure Mulberry Crimson Silk Wide Base -->
+      <rect x="0" y="65" width="152" height="390" rx="14" fill="url(#crimsonChoodaSilk)"/>
+      <line x1="5" y1="70" x2="5" y2="450" stroke="url(#bridalGold)" stroke-width="5"/>
+      <line x1="147" y1="70" x2="147" y2="450" stroke="url(#bridalGold)" stroke-width="5"/>
+
+      <!-- Large Diamond Kundan Centerpieces with Raised Gold Frames -->
+      <g id="centerDiamondKundans" stroke="url(#bridalGold)" stroke-width="2">
+        <!-- Center Gem 1 -->
+        <g transform="translate(76, 115)">
+          <rect x="-16" y="-16" width="32" height="32" rx="4" fill="url(#kundanStone)" transform="rotate(45)"/>
+          <circle cx="0" cy="0" r="8" fill="url(#rubyGem)"/>
+          <circle cx="-26" cy="0" r="4.5" fill="url(#bridalGold)"/>
+          <circle cx="26" cy="0" r="4.5" fill="url(#bridalGold)"/>
+        </g>
+        <!-- Center Gem 2 -->
+        <g transform="translate(76, 185)">
+          <rect x="-18" y="-18" width="36" height="36" rx="4" fill="url(#kundanStone)" transform="rotate(45)"/>
+          <circle cx="0" cy="0" r="9" fill="url(#rubyGem)"/>
+          <circle cx="-28" cy="0" r="5" fill="url(#bridalGold)"/>
+          <circle cx="28" cy="0" r="5" fill="url(#bridalGold)"/>
+        </g>
+        <!-- Center Gem 3 (Grand Centerpiece) -->
+        <g transform="translate(76, 260)">
+          <rect x="-22" y="-22" width="44" height="44" rx="5" fill="url(#kundanStone)" transform="rotate(45)"/>
+          <circle cx="0" cy="0" r="11" fill="url(#rubyGem)"/>
+          <circle cx="-32" cy="0" r="6" fill="url(#bridalGold)"/>
+          <circle cx="32" cy="0" r="6" fill="url(#bridalGold)"/>
+        </g>
+        <!-- Center Gem 4 -->
+        <g transform="translate(76, 335)">
+          <rect x="-18" y="-18" width="36" height="36" rx="4" fill="url(#kundanStone)" transform="rotate(45)"/>
+          <circle cx="0" cy="0" r="9" fill="url(#rubyGem)"/>
+          <circle cx="-28" cy="0" r="5" fill="url(#bridalGold)"/>
+          <circle cx="28" cy="0" r="5" fill="url(#bridalGold)"/>
+        </g>
+        <!-- Center Gem 5 -->
+        <g transform="translate(76, 405)">
+          <rect x="-16" y="-16" width="32" height="32" rx="4" fill="url(#kundanStone)" transform="rotate(45)"/>
+          <circle cx="0" cy="0" r="8" fill="url(#rubyGem)"/>
+          <circle cx="-26" cy="0" r="4.5" fill="url(#bridalGold)"/>
+          <circle cx="26" cy="0" r="4.5" fill="url(#bridalGold)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 7. Emerald Green Silk Spacer 3 -->
+    <g id="rightGreenSpacer1" transform="translate(382, 0)">
+      <rect x="0" y="85" width="14" height="350" rx="3" fill="url(#greenSpacerSilk)"/>
+    </g>
+
+    <!-- 8. Micro Ruby Stone Eternity Chain Bangles (Right Stack) -->
+    <g id="rightRubyStack" transform="translate(402, 0)">
+      <rect x="0" y="85" width="22" height="350" rx="4" fill="url(#crimsonChoodaSilk)"/>
+      <g fill="url(#rubyGem)" stroke="url(#bridalGold)" stroke-width="0.8">
+        <circle cx="11" cy="100" r="3.5"/><circle cx="11" cy="115" r="3.5"/><circle cx="11" cy="130" r="3.5"/><circle cx="11" cy="145" r="3.5"/><circle cx="11" cy="160" r="3.5"/><circle cx="11" cy="175" r="3.5"/><circle cx="11" cy="190" r="3.5"/><circle cx="11" cy="205" r="3.5"/><circle cx="11" cy="220" r="3.5"/><circle cx="11" cy="235" r="3.5"/><circle cx="11" cy="250" r="3.5"/><circle cx="11" cy="265" r="3.5"/><circle cx="11" cy="280" r="3.5"/><circle cx="11" cy="295" r="3.5"/><circle cx="11" cy="310" r="3.5"/><circle cx="11" cy="325" r="3.5"/><circle cx="11" cy="340" r="3.5"/><circle cx="11" cy="355" r="3.5"/><circle cx="11" cy="370" r="3.5"/><circle cx="11" cy="385" r="3.5"/><circle cx="11" cy="400" r="3.5"/><circle cx="11" cy="415" r="3.5"/>
+      </g>
+    </g>
+
+    <!-- 9. Kundan Navette Flower Bangle (Right) -->
+    <g id="rightKundanNavetteBangle" transform="translate(430, 0)">
+      <rect x="0" y="75" width="60" height="370" rx="10" fill="url(#crimsonChoodaSilk)"/>
+      <g stroke="url(#bridalGold)" stroke-width="1.5">
+        <g transform="translate(30, 130)">
+          <circle cx="0" cy="0" r="6" fill="url(#rubyGem)"/>
+          <path d="M 0,-16 C -5,-9 -5,-5 0,-1 C 5,-5 5,-9 0,-16 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,16 C -5,9 -5,5 0,1 C 5,5 5,9 0,16 Z" fill="url(#kundanStone)"/>
+          <path d="M -16,0 C -9,-5 -5,-5 -1,0 C -5,5 -9,5 -16,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 16,0 C 9,-5 5,-5 1,0 C 5,5 9,5 16,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 220)">
+          <circle cx="0" cy="0" r="7" fill="url(#rubyGem)"/>
+          <path d="M 0,-18 C -6,-10 -6,-6 0,-1 C 6,-6 6,-10 0,-18 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,18 C -6,10 -6,6 0,1 C 6,6 6,10 0,18 Z" fill="url(#kundanStone)"/>
+          <path d="M -18,0 C -10,-6 -6,-6 -1,0 C -6,6 -10,6 -18,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 18,0 C 10,-6 6,-6 1,0 C 6,6 10,6 18,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 310)">
+          <circle cx="0" cy="0" r="7" fill="url(#rubyGem)"/>
+          <path d="M 0,-18 C -6,-10 -6,-6 0,-1 C 6,-6 6,-10 0,-18 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,18 C -6,10 -6,6 0,1 C 6,6 6,10 0,18 Z" fill="url(#kundanStone)"/>
+          <path d="M -18,0 C -10,-6 -6,-6 -1,0 C -6,6 -10,6 -18,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 18,0 C 10,-6 6,-6 1,0 C 6,6 10,6 18,0 Z" fill="url(#kundanStone)"/>
+        </g>
+        <g transform="translate(30, 400)">
+          <circle cx="0" cy="0" r="6" fill="url(#rubyGem)"/>
+          <path d="M 0,-16 C -5,-9 -5,-5 0,-1 C 5,-5 5,-9 0,-16 Z" fill="url(#kundanStone)"/>
+          <path d="M 0,16 C -5,9 -5,5 0,1 C 5,5 5,9 0,16 Z" fill="url(#kundanStone)"/>
+          <path d="M -16,0 C -9,-5 -5,-5 -1,0 C -5,5 -9,5 -16,0 Z" fill="url(#kundanStone)"/>
+          <path d="M 16,0 C 9,-5 5,-5 1,0 C 5,5 9,5 16,0 Z" fill="url(#kundanStone)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 10. Emerald Green Silk Spacer 4 -->
+    <g id="rightGreenSpacer2" transform="translate(496, 0)">
+      <rect x="0" y="85" width="14" height="350" rx="3" fill="url(#greenSpacerSilk)"/>
+    </g>
+
+    <!-- 11. RIGHT FLANKING KADA: Kundan Floral Floret with Red Crystals -->
+    <g id="rightOuterKada" transform="translate(516, 0)">
+      <rect x="0" y="80" width="45" height="360" rx="8" fill="url(#crimsonChoodaSilk)"/>
+      <line x1="4" y1="85" x2="4" y2="435" stroke="url(#bridalGold)" stroke-width="3"/>
+      <line x1="41" y1="85" x2="41" y2="435" stroke="url(#bridalGold)" stroke-width="3"/>
+      <g stroke="url(#bridalGold)" stroke-width="1.2">
+        <circle cx="22" cy="115" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="145" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 152)"/>
+        <circle cx="22" cy="190" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="225" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 232)"/>
+        <circle cx="22" cy="270" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="305" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 312)"/>
+        <circle cx="22" cy="350" r="7" fill="url(#rubyGem)"/>
+        <rect x="15" y="385" width="14" height="14" rx="2" fill="url(#kundanStone)" transform="rotate(45 22 392)"/>
+      </g>
+    </g>
+
+  </g>
+</svg>
