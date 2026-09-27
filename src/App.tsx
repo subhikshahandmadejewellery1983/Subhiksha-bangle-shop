@@ -883,75 +883,113 @@ export default function App() {
         </div>
       )}
 
-      {/* 1. Royal Announcement Top Bar */}
-      <div className="bg-[#114B3E] text-[#F4EFE6] px-4 py-2 text-xs text-center tracking-wider font-medium flex items-center justify-center gap-3 flex-wrap">
-        <span className="flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-[#E8D38B] animate-pulse" />
-          <span>Subhiksha Homemade Jewellery • Complimentary Keepsake Box on Orders Above ₹1,999</span>
-        </span>
-        <span className="hidden md:inline text-emerald-300">·</span>
-        <button
-          onClick={() => {
-            const el = document.getElementById('workshop-photos-section');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-            else setActiveTab('shop');
-          }}
-          className="text-[#E8D38B] hover:underline font-semibold flex items-center gap-1 cursor-pointer"
-        >
-          <Camera className="w-3.5 h-3.5" />
-          <span>Sync 4 Workshop Photos</span>
-        </button>
-        <span className="hidden md:inline text-emerald-300">·</span>
-        <button
-          onClick={() => {
-            setTrackingModalInitialId('');
-            setIsTrackingModalOpen(true);
-          }}
-          className="text-[#E8D38B] hover:underline font-semibold flex items-center gap-1 cursor-pointer"
-        >
-          <Truck className="w-3.5 h-3.5" />
-          <span>Track Order Consignment</span>
-        </button>
-        <span className="hidden md:inline text-emerald-300">·</span>
-        <button
-          onClick={() => setActiveTab('admin')}
-          className="text-[#E8D38B] hover:underline font-semibold flex items-center gap-1 cursor-pointer"
-        >
-          <Boxes className="w-3.5 h-3.5" />
-          <span>Admin &amp; Inventory</span>
-        </button>
-        <span className="hidden md:inline text-emerald-300">·</span>
-        <a 
-          href={getWhatsAppOrderUrl()} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#E8D38B] hover:underline font-semibold flex items-center gap-1"
-        >
-          <Phone className="w-3 h-3" />
-          <span>WhatsApp: 9080789855</span>
-        </a>
-      </div>
+
 
       {/* 2. Main Luxury Header */}
-      <header className="sticky top-0 z-40 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8D8C8] transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
-          {/* Brand Identity */}
-          <div 
-            onClick={() => setActiveTab('shop')} 
-            className="cursor-pointer group flex flex-col items-start"
-          >
-            <div className="flex items-center gap-2">
-              <span className="text-xl sm:text-2xl tracking-wide font-serif-luxury font-bold text-[#1A1816] group-hover:text-[#9A7416] transition">
-                Subhiksha Homemade Jewellery
-              </span>
-            </div>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#8C7A6B] font-medium">
-              Handcrafted Silk Thread Bangles & Bridal Sets
-            </span>
-          </div>
+      <header className="sticky top-0 z-40 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8D8C8] shadow-xs transition-all">
+        {/* Top Masthead: Brand Identity Exactly Centered Horizontally */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3.5 pb-2.5">
+          <div className="relative flex items-center justify-between">
+            {/* Left Quick Action Wing */}
+            <div className="flex items-center gap-2 sm:gap-3 flex-1 justify-start">
+              <a
+                href={getWhatsAppOrderUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-[#25D366]/15 text-[#075E54] hover:bg-[#25D366] hover:text-white transition shadow-sm border border-[#25D366]/30"
+                title="Chat with Subhiksha Homemade Jewellery on WhatsApp (+91 90807 89855)"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span>WhatsApp</span>
+              </a>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-6 text-xs font-semibold uppercase tracking-widest text-[#443E38]">
+              <button
+                onClick={() => {
+                  setTrackingModalInitialId('');
+                  setIsTrackingModalOpen(true);
+                }}
+                className="hidden md:flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-[#FAF7F2] border border-[#E8D8C8] hover:border-[#9A7416] text-[#1A1816] transition shadow-sm cursor-pointer"
+                title="Track Order by ID or Phone"
+              >
+                <Truck className="w-3.5 h-3.5 text-[#9A7416]" />
+                <span>Track Order</span>
+              </button>
+            </div>
+
+            {/* Exactly Centered Brand Masthead */}
+            <div 
+              onClick={() => setActiveTab('shop')} 
+              className="cursor-pointer group flex flex-col items-center justify-center text-center shrink-0 px-2 sm:px-4 z-10"
+            >
+              <h1 className="text-xl sm:text-2xl md:text-3xl tracking-wide font-serif-luxury font-bold text-[#1A1816] group-hover:text-[#9A7416] transition leading-tight">
+                Subhiksha Homemade Jewellery
+              </h1>
+              <p className="text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.24em] text-[#8C7A6B] font-medium mt-1">
+                Handcrafted Silk Thread Bangles &amp; Bridal Sets
+              </p>
+            </div>
+
+            {/* Right Action Icons & Utilities Wing */}
+            <div className="flex items-center gap-2 sm:gap-3 flex-1 justify-end">
+              {/* Admin Portal Button */}
+              <button
+                onClick={() => setActiveTab('admin')}
+                className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border transition shadow-sm cursor-pointer ${
+                  activeTab === 'admin'
+                    ? 'bg-[#114B3E] text-white border-[#114B3E]'
+                    : 'bg-[#FAF7F2] border-[#E8D8C8] hover:border-[#9A7416] text-[#1A1816]'
+                }`}
+                title="Open Admin Dashboard & Stock Editor"
+              >
+                <Boxes className="w-3.5 h-3.5 text-[#9A7416]" />
+                <span className="hidden xl:inline">Admin Dashboard</span>
+                <span className="xl:hidden">Admin</span>
+              </button>
+
+              {/* Live Website Guide Trigger */}
+              <button
+                onClick={() => setIsGoLiveModalOpen(true)}
+                className="hidden lg:flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-[#114B3E] text-white hover:bg-[#0D382E] transition shadow-sm cursor-pointer"
+                title="How to take website live & connect domain"
+              >
+                <Globe className="w-3.5 h-3.5 text-[#E8D38B]" />
+                <span>Go Live</span>
+              </button>
+
+              {/* Wishlist Button */}
+              <button
+                onClick={() => setIsWishlistOpen(true)}
+                className="relative p-2 text-[#443E38] hover:text-[#C59B27] transition cursor-pointer"
+                title="View Wishlist"
+              >
+                <Heart className="w-5 h-5" />
+                {wishlist.length > 0 && (
+                  <span className="absolute top-1 right-1 w-4 h-4 bg-[#8B1824] text-white rounded-full text-[10px] flex items-center justify-center font-bold">
+                    {wishlist.length}
+                  </span>
+                )}
+              </button>
+
+              {/* Cart Button */}
+              <button
+                onClick={() => setIsCartOpen(true)}
+                className="relative p-2 text-[#443E38] hover:text-[#C59B27] transition cursor-pointer"
+                title="View Cart"
+              >
+                <ShoppingBag className="w-5 h-5" />
+                {cart.length > 0 && (
+                  <span className="absolute top-1 right-1 w-4 h-4 bg-[#C59B27] text-white rounded-full text-[10px] flex items-center justify-center font-bold">
+                    {cart.reduce((sum, item) => sum + item.quantity, 0)}
+                  </span>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Navigation Links Tier - Clean Centered Bar */}
+        <div className="hidden md:flex border-t border-[#E8D8C8]/60 bg-[#FAF7F2]/80">
+          <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-center space-x-7 text-xs font-semibold uppercase tracking-widest text-[#443E38]">
             <button
               onClick={() => { setActiveTab('shop'); setSelectedCategory('All'); }}
               className={`transition hover:text-[#9A7416] pb-1 border-b-2 ${activeTab === 'shop' && selectedCategory === 'All' ? 'border-[#C59B27] text-[#9A7416]' : 'border-transparent'}`}
@@ -1012,87 +1050,6 @@ export default function App() {
               )}
             </button>
           </nav>
-
-          {/* Action Icons */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
-            {/* Admin Portal Button */}
-            <button
-              onClick={() => setActiveTab('admin')}
-              className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border transition shadow-sm cursor-pointer ${
-                activeTab === 'admin'
-                  ? 'bg-[#114B3E] text-white border-[#114B3E]'
-                  : 'bg-[#FAF7F2] border-[#E8D8C8] hover:border-[#9A7416] text-[#1A1816]'
-              }`}
-              title="Open Admin Dashboard & Stock Editor"
-            >
-              <Boxes className="w-3.5 h-3.5 text-[#9A7416]" />
-              <span className="hidden xl:inline">Admin Dashboard</span>
-              <span className="xl:hidden">Admin</span>
-            </button>
-
-            {/* Quick Track Order Button */}
-            <button
-              onClick={() => {
-                setTrackingModalInitialId('');
-                setIsTrackingModalOpen(true);
-              }}
-              className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-[#FAF7F2] border border-[#E8D8C8] hover:border-[#9A7416] text-[#1A1816] transition shadow-sm cursor-pointer"
-              title="Track Order by ID or Phone"
-            >
-              <Truck className="w-3.5 h-3.5 text-[#9A7416]" />
-              <span className="hidden lg:inline">Track Order</span>
-            </button>
-
-            {/* Live Website Guide Trigger */}
-            <button
-              onClick={() => setIsGoLiveModalOpen(true)}
-              className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-[#114B3E] text-white hover:bg-[#0D382E] transition shadow-sm"
-              title="How to take website live & connect domain"
-            >
-              <Globe className="w-3.5 h-3.5 text-[#E8D38B]" />
-              <span className="hidden sm:inline">Go Live Guide</span>
-              <span className="sm:hidden text-[11px]">Live</span>
-            </button>
-
-            <a
-              href={getWhatsAppOrderUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-full bg-[#25D366]/15 text-[#075E54] hover:bg-[#25D366] hover:text-white transition shadow-sm border border-[#25D366]/30"
-              title="Chat with Subhiksha Homemade Jewellery on WhatsApp (+91 90807 89855)"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              <span>WhatsApp</span>
-            </a>
-
-            {/* Wishlist Button */}
-            <button
-              onClick={() => setIsWishlistOpen(true)}
-              className="relative p-2 text-[#443E38] hover:text-[#C59B27] transition"
-              title="View Wishlist"
-            >
-              <Heart className="w-5 h-5" />
-              {wishlist.length > 0 && (
-                <span className="absolute top-1 right-1 w-4 h-4 bg-[#8B1824] text-white rounded-full text-[10px] flex items-center justify-center font-bold">
-                  {wishlist.length}
-                </span>
-              )}
-            </button>
-
-            {/* Cart Button */}
-            <button
-              onClick={() => setIsCartOpen(true)}
-              className="relative p-2 text-[#443E38] hover:text-[#C59B27] transition"
-              title="View Cart"
-            >
-              <ShoppingBag className="w-5 h-5" />
-              {cart.length > 0 && (
-                <span className="absolute top-1 right-1 w-4 h-4 bg-[#C59B27] text-white rounded-full text-[10px] flex items-center justify-center font-bold">
-                  {cart.reduce((sum, item) => sum + item.quantity, 0)}
-                </span>
-              )}
-            </button>
-          </div>
         </div>
 
         {/* Mobile Navigation Strip */}
