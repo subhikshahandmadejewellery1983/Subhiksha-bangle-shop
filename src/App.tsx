@@ -1144,33 +1144,7 @@ export default function App() {
                 </button>
               </div>
 
-              {/* Silk Thread Bangles Hero Showcase Strip */}
-              <div className="mt-10 flex items-center justify-center gap-3 sm:gap-6 overflow-x-auto py-2">
-                {[
-                  { name: "Bridal Chooda", color: "Crimson Red", img: "/images/bangles/maharani-crimson-kundan.svg", tag: "Maharani 24-Pc" },
-                  { name: "Royal Emerald", color: "Peacock Emerald", img: "/images/bangles/mayura-emerald-royale.svg", tag: "Zardozi Kadas" },
-                  { name: "Turquoise Kasu", color: "Sky Blue", img: "/images/bangles/subhiksha-turquoise-pink-kasu.svg", tag: "Temple Kasu Set" },
-                  { name: "Shahi Violet", color: "Royal Purple", img: "/images/bangles/shahi-plum-royal-violet.svg", tag: "Amethyst Stack" },
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => {
-                      const el = document.getElementById('catalog-grid');
-                      el?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                    className="flex flex-col items-center group cursor-pointer shrink-0"
-                  >
-                    <div 
-                      className="w-16 h-16 sm:w-20 sm:h-20 aspect-square rounded-2xl overflow-hidden border-2 border-[#E8D8C8] bg-white shadow-md group-hover:scale-105 group-hover:border-[#C59B27] transition duration-300"
-                      style={{ aspectRatio: '1 / 1' }}
-                    >
-                      <img src={item.img} alt={item.name} className="w-full h-full object-cover object-center" style={{ aspectRatio: '1 / 1' }} />
-                    </div>
-                    <span className="text-[11px] font-bold text-[#1A1816] mt-2 group-hover:text-[#9A7416] transition">{item.name}</span>
-                    <span className="text-[9px] text-[#8C7A6B]">{item.tag}</span>
-                  </div>
-                ))}
-              </div>
+
 
               {/* Trust Badges */}
               <div className="mt-12 pt-8 border-t border-[#E8D8C8]/80 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
