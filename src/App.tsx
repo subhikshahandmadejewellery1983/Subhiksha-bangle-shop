@@ -827,6 +827,12 @@ export default function App() {
   // Filtered & Sorted Products
   const filteredProducts = useMemo(() => {
     return products.filter(product => {
+      // If viewing All with no search or occasion, exclude the top featured flagship items to avoid duplicate repetition
+      if (selectedCategory === 'All' && searchQuery === '' && selectedOccasion === 'All') {
+        if (['prod-1', 'prod-3', 'prod-4'].includes(product.id)) {
+          return false;
+        }
+      }
       const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
       const matchesOccasion = selectedOccasion === 'All' || product.occasion.toLowerCase().includes(selectedOccasion.toLowerCase());
       const matchesSearch = searchQuery === '' || 
@@ -1226,7 +1232,7 @@ export default function App() {
                 Every piece is individually hand-wrapped in pure lustrous mulberry silk thread, adorned with uncut jadau Kundan stones, micro-seed pearls, and authentic zardozi embroidery. Tailored exclusively to your bangle dimensions and bridal attire.
               </p>
 
-              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10">
                 <button
                   onClick={() => {
                     const el = document.getElementById('catalog-grid');
@@ -1252,10 +1258,231 @@ export default function App() {
                   <span>Size Finder</span>
                 </button>
               </div>
+
+              {/* Trust Badges */}
+              <div className="pt-6 border-t border-[#E8D8C8]/80 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
+                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold text-[#1A1816]">100% Pure Silk</h4>
+                    <p className="text-[11px] text-[#8C7A6B]">High-twist mulberry yarn</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
+                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
+                    <Ruler className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold text-[#1A1816]">Custom Sizing</h4>
+                    <p className="text-[11px] text-[#8C7A6B]">Precise 2.2 to 2.10 fits</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
+                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
+                    <Shield className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold text-[#1A1816]">Featherlight Comfort</h4>
+                    <p className="text-[11px] text-[#8C7A6B]">Zero wrist strain for hours</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
+                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold text-[#1A1816]">Artisan Made</h4>
+                    <p className="text-[11px] text-[#8C7A6B]">Master handcrafted in India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Featured Flagship Masterpieces Section (Right below Explore Bangles / Hero) */}
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-[#FAF7F2] to-[#F4EFE6] border-b border-[#E8D8C8]">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="text-xs uppercase font-semibold tracking-[0.25em] text-[#9A7416] block mb-2">
+                Handcrafted Masterpieces
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-serif-luxury font-bold text-[#1A1816] mb-3">
+                Explore Flagship Silk Thread Bangles
+              </h2>
+              <p className="text-xs sm:text-sm text-[#68625B]">
+                Our most coveted handcrafted bridal choodas and festive stacks, meticulously wrapped in pure mulberry silk.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+              {products.filter(p => ['prod-1', 'prod-3', 'prod-4'].includes(p.id)).map(product => {
+                const isSaved = wishlist.includes(product.id);
+                const displayImage = customUploadedImages[product.id] || product.image;
+                const isCustomPhoto = !!customUploadedImages[product.id];
+                return (
+                  <div
+                    key={product.id}
+                    className="group bg-white rounded-3xl border border-[#E8D8C8] overflow-hidden flex flex-col justify-between shadow-md hover:shadow-2xl transition-all duration-300 h-full"
+                  >
+                    <div>
+                      {/* Image Container - Strict 1:1 Square */}
+                      <div 
+                        className="relative aspect-square w-full overflow-hidden bg-[#FAF7F2] cursor-pointer flex items-center justify-center shrink-0"
+                        style={{ aspectRatio: '1 / 1' }}
+                        onClick={() => { setQuickViewProduct(product); setQuickViewSize(product.sizes[1] || '2.6'); }}
+                      >
+                        <img
+                          src={displayImage}
+                          alt={product.name}
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                          style={{ aspectRatio: '1 / 1' }}
+                        />
+
+                        {/* Status Badges */}
+                        <div className="absolute top-3 left-3 flex flex-col gap-1 z-10 pointer-events-none">
+                          {product.stock <= 0 && (
+                            <span className="bg-red-700 text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm">
+                              Out of Stock
+                            </span>
+                          )}
+                          {product.stock > 0 && product.stock <= 5 && (
+                            <span className="bg-amber-700 text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm">
+                              Only {product.stock} Left
+                            </span>
+                          )}
+                          {product.isBestSeller && (
+                            <span className="bg-[#114B3E] text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm">
+                              Best Seller
+                            </span>
+                          )}
+                          {product.isNew && (
+                            <span className="bg-[#8B1824] text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm">
+                              New Arrival
+                            </span>
+                          )}
+                          {isCustomPhoto && (
+                            <span className="bg-[#9A7416] text-white text-[9px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+                              <Camera className="w-2.5 h-2.5" /> Original Photo
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Top Right Action Controls */}
+                        <div className="absolute top-3 right-3 flex items-center gap-1.5 z-10" onClick={(e) => e.stopPropagation()}>
+                          <button
+                            onClick={() => setActiveTab('admin')}
+                            className="p-2 rounded-full bg-white/90 backdrop-blur hover:bg-[#114B3E] hover:text-white text-[#443E38] shadow-sm transition"
+                            title="Edit product"
+                          >
+                            <Edit className="w-3.5 h-3.5" />
+                          </button>
+                          <label
+                            className="p-2 rounded-full bg-white/90 backdrop-blur hover:bg-white text-[#443E38] hover:text-[#9A7416] shadow-sm transition cursor-pointer"
+                            title="Upload original workshop photo"
+                          >
+                            <Camera className="w-3.5 h-3.5" />
+                            <input
+                              type="file"
+                              accept="image/*"
+                              className="hidden"
+                              onChange={(e) => {
+                                const file = e.target.files?.[0];
+                                if (file) handleUploadBanglePhoto(product.id, file);
+                              }}
+                            />
+                          </label>
+                          {isCustomPhoto && (
+                            <button
+                              onClick={() => handleResetBanglePhoto(product.id)}
+                              className="p-2 rounded-full bg-white/90 backdrop-blur hover:bg-white text-red-600 shadow-sm transition"
+                              title="Reset to default artwork"
+                            >
+                              <RotateCcw className="w-3.5 h-3.5" />
+                            </button>
+                          )}
+                          <button
+                            onClick={() => toggleWishlist(product.id)}
+                            className={`p-2 rounded-full bg-white/90 backdrop-blur shadow-sm transition ${
+                              isSaved ? 'text-red-600 bg-red-50' : 'text-[#443E38] hover:text-red-600'
+                            }`}
+                            title={isSaved ? 'Remove from wishlist' : 'Save to wishlist'}
+                          >
+                            <Heart className={`w-3.5 h-3.5 ${isSaved ? 'fill-current' : ''}`} />
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Product Content Details */}
+                      <div className="p-5">
+                        <div className="flex items-center justify-between text-xs text-[#8C7A6B] mb-2">
+                          <div className="flex items-center gap-1 font-medium text-[#9A7416]">
+                            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                            <span>{product.rating}</span>
+                            <span className="text-[#A89E94]">({product.reviewCount})</span>
+                          </div>
+                          <div className="flex items-center gap-1.5">
+                            <span className="w-2.5 h-2.5 rounded-full border border-black/10 shrink-0" style={{ backgroundColor: product.colorHex }} />
+                            <span className="truncate max-w-[100px] text-[11px]">{product.primaryColor}</span>
+                          </div>
+                        </div>
+
+                        <h3 
+                          onClick={() => { setQuickViewProduct(product); setQuickViewSize(product.sizes[1] || '2.6'); }}
+                          className="font-serif-luxury font-bold text-base text-[#1A1816] mb-1.5 hover:text-[#9A7416] transition cursor-pointer line-clamp-1"
+                        >
+                          {product.name}
+                        </h3>
+
+                        <p className="text-xs text-[#68625B] line-clamp-2 mb-4 leading-relaxed">
+                          {product.subtitle}
+                        </p>
+
+                        <div className="flex items-center justify-between text-[11px] text-[#8C7A6B] pt-3 border-t border-[#F2ECE4]">
+                          <span className="font-semibold text-[#1A1816]">{product.pieces}</span>
+                          <span className="truncate max-w-[130px]">Sizes: {product.sizes.join(', ')}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Card Footer Price & Add Button */}
+                    <div className="p-5 pt-0 flex items-center justify-between">
+                      <div>
+                        <div className="flex items-baseline gap-2">
+                          <span className="text-lg font-bold text-[#1A1816]">₹{product.price}</span>
+                          <span className="text-xs text-[#A89E94] line-through">₹{product.originalPrice}</span>
+                        </div>
+                        <span className="text-[10px] text-[#114B3E] font-semibold">
+                          {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% Off • {product.stock} in stock
+                        </span>
+                      </div>
+
+                      <button
+                        onClick={() => {
+                          handleAddToCart(product, product.sizes[1] || '2.6');
+                        }}
+                        disabled={product.stock <= 0}
+                        className={`px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition flex items-center gap-1.5 shadow-md ${
+                          product.stock > 0
+                            ? 'bg-[#1A1816] text-white hover:bg-[#9A7416]'
+                            : 'bg-slate-200 text-slate-500 cursor-not-allowed'
+                        }`}
+                      >
+                        <ShoppingBag className="w-3.5 h-3.5" />
+                        <span>Add</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </section>
 
           {/* Catalog Filter & Controls Bar */}
+
           <section id="catalog-grid" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#E8D8C8]">
               {/* Category Filter Buttons */}
@@ -2784,53 +3011,6 @@ export default function App() {
 
       {/* 13. Luxury Footer */}
       <footer className="bg-[#1A1816] text-[#FAF7F2] border-t border-[#332E2A] mt-auto">
-        {/* Brand Guarantees / Trust Badges in Footer */}
-        <div className="border-b border-[#332E2A] bg-black/25">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
-              <div className="flex items-center gap-3.5 p-2">
-                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
-                  <Sparkles className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-white tracking-wide">100% Pure Silk</h4>
-                  <p className="text-[11px] text-[#A89E94]">High-twist mulberry yarn</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3.5 p-2">
-                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
-                  <Ruler className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-white tracking-wide">Custom Sizing</h4>
-                  <p className="text-[11px] text-[#A89E94]">Precise 2.2 to 2.10 fits</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3.5 p-2">
-                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
-                  <Shield className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-white tracking-wide">Featherlight Comfort</h4>
-                  <p className="text-[11px] text-[#A89E94]">Zero wrist strain for hours</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3.5 p-2">
-                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
-                  <Award className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-white tracking-wide">Artisan Made</h4>
-                  <p className="text-[11px] text-[#A89E94]">Master handcrafted in India</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
