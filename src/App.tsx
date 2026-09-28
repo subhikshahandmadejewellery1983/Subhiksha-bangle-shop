@@ -57,7 +57,7 @@ interface Product {
   originalPrice: number;
   rating: number;
   reviewCount: number;
-  category: 'Bridal' | 'Kada' | 'Festive' | 'Kundan';
+  category: 'Thread Bangles' | 'Earring Studs' | 'Jhumkas' | string;
   occasion: string;
   primaryColor: string;
   colorHex: string;
@@ -119,8 +119,9 @@ const getBangleImageForColor = (colorName: string): string => {
   }
 };
 
-// --- Luxury Silk Thread Bangles Catalog (Exclusively Handmade Silk Thread Bangles) ---
+// --- Boutique Catalog (Curated Exclusively: Thread Bangles, Earring Studs & Jhumkas) ---
 const INITIAL_PRODUCTS: Product[] = [
+  // === 1. THREAD BANGLES ===
   {
     id: "prod-1",
     slug: "maharani-crimson-kundan-bridal-chooda",
@@ -130,7 +131,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 4999,
     rating: 4.95,
     reviewCount: 148,
-    category: "Bridal",
+    category: "Thread Bangles",
     occasion: "Bridal & Wedding",
     primaryColor: "Crimson Red",
     colorHex: "#8B1824",
@@ -141,11 +142,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: false,
     featured: true,
     image: "/images/bangles/maharani-crimson-kundan.svg",
-    images: [
-      "/images/bangles/maharani-crimson-kundan.svg",
-      "/images/bangles/mayura-emerald-royale.svg"
-    ],
-    description: "An opulent 24-piece heirloom bridal chooda hand-wrapped in luminous deep crimson mulberry silk thread. Intricately adorned with fine uncut jadau Kundan stones, micro-pearl tassels (latkans), and delicate antique gold zari filigree. Designed for the discerning Indian bride who seeks royalty, lightness, and grace.",
+    images: ["/images/bangles/maharani-crimson-kundan.svg"],
+    description: "An opulent 24-piece heirloom bridal chooda hand-wrapped in luminous deep crimson mulberry silk thread. Intricately adorned with fine uncut jadau Kundan stones, micro-pearl tassels (latkans), and delicate antique gold zari filigree.",
     materials: "100% High-twist Mulberry Silk Yarn, Brass Kada core, Hydro Kundan stones, Freshwater seed pearls",
     care: "Keep away from water, perfumes, and heavy dampness. Store in our silk-padded presentation box provided."
   },
@@ -158,7 +156,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2499,
     rating: 4.88,
     reviewCount: 92,
-    category: "Kada",
+    category: "Thread Bangles",
     occasion: "Sangeet & Festive",
     primaryColor: "Royal Emerald",
     colorHex: "#114B3E",
@@ -169,10 +167,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: true,
     featured: true,
     image: "/images/bangles/mayura-emerald-royale.svg",
-    images: [
-      "/images/bangles/mayura-emerald-royale.svg"
-    ],
-    description: "Inspired by the royal peacock pavilions of Jaipur, this majestic pair features an emerald green base woven meticulously with double-ply silk thread. Highlighted with zardozi bullion threadwork, green leaf marquise stones, and faceted crystal baguettes.",
+    images: ["/images/bangles/mayura-emerald-royale.svg"],
+    description: "Inspired by the royal peacock pavilions of Jaipur, this majestic pair features an emerald green base woven meticulously with double-ply silk thread and highlighted with zardozi bullion threadwork.",
     materials: "Emerald Silk Thread, Zinc alloy heavy base, Czech crystal baguettes, Brass wire",
     care: "Gently wipe with dry microfiber cloth. Avoid exposure to harsh sprays and humid areas."
   },
@@ -185,7 +181,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2899,
     rating: 4.96,
     reviewCount: 114,
-    category: "Bridal",
+    category: "Thread Bangles",
     occasion: "Bridal & Pooja",
     primaryColor: "Turquoise Blue",
     colorHex: "#0096B7",
@@ -196,10 +192,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: true,
     featured: true,
     image: "/images/bangles/subhiksha-turquoise-pink-kasu.svg",
-    images: [
-      "/images/bangles/subhiksha-turquoise-pink-kasu.svg"
-    ],
-    description: "An auspicious South Indian bridal creation featuring luminous turquoise blue pure silk thread wrapped over solid metal cores. Adorned with antique gold embossed Lakshmi Kasu coins, vibrant magenta pink square crystals, and floral starburst motifs.",
+    images: ["/images/bangles/subhiksha-turquoise-pink-kasu.svg"],
+    description: "An auspicious South Indian bridal creation featuring luminous turquoise blue pure silk thread wrapped over solid metal cores. Adorned with antique gold embossed Lakshmi Kasu coins, vibrant magenta pink square crystals, and floral motifs.",
     materials: "Pure Turquoise Mulberry Silk Yarn, Antique Gold Plated Kasu Coins, Austrian Rani Pink Crystals",
     care: "Keep in dry presentation pouch. Avoid water and moisture."
   },
@@ -212,7 +206,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2299,
     rating: 4.91,
     reviewCount: 78,
-    category: "Festive",
+    category: "Thread Bangles",
     occasion: "Reception & Cocktail",
     primaryColor: "Shahi Plum",
     colorHex: "#4A154B",
@@ -220,13 +214,11 @@ const INITIAL_PRODUCTS: Product[] = [
     pieces: "Set of 9 Silk Thread Bangles",
     stock: 20,
     isBestSeller: true,
-    isNew: true,
+    isNew: false,
     featured: true,
     image: "/images/bangles/shahi-plum-royal-violet.svg",
-    images: [
-      "/images/bangles/shahi-plum-royal-violet.svg"
-    ],
-    description: "A royal evening ensemble combining deep shahi plum and pastel lilac silk threads. Bordered with square amethyst crystal baguettes in gold bezels and highlighted by a centerpiece kada with purple teardrop petals and diamond mirror stones.",
+    images: ["/images/bangles/shahi-plum-royal-violet.svg"],
+    description: "A royal evening ensemble combining deep shahi plum and pastel lilac silk threads. Bordered with square amethyst crystal baguettes in gold bezels and highlighted by a centerpiece kada with purple teardrop petals.",
     materials: "High-grade Violet Mulberry Silk Thread, Amethyst Austrian Crystal Baguettes, Mirror Glass, Metal Base",
     care: "Wipe with soft lint-free cloth after wear. Keep in velvet box."
   },
@@ -239,7 +231,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2999,
     rating: 4.97,
     reviewCount: 64,
-    category: "Bridal",
+    category: "Thread Bangles",
     occasion: "Bridal & Reception",
     primaryColor: "Antique Ivory",
     colorHex: "#F5F0E6",
@@ -250,10 +242,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: false,
     featured: false,
     image: "/images/bangles/padmavati-antique-ivory.svg",
-    images: [
-      "/images/bangles/padmavati-antique-ivory.svg"
-    ],
-    description: "A harmonious marriage of natural raw ivory silk and antique matte gold zari. Features hand-encrusted polki glass mirrors framed in raised brass bezels for a royal vintage appeal that coordinates with any pastel or ivory bridal lehenga.",
+    images: ["/images/bangles/padmavati-antique-ivory.svg"],
+    description: "A harmonious marriage of natural raw ivory silk and antique matte gold zari. Features hand-encrusted polki glass mirrors framed in raised brass bezels for a royal vintage appeal.",
     materials: "Raw Unbleached Silk Thread, Antique Gold Zari, Polki Glass, Brass Core",
     care: "Avoid moisture and contact with cosmetics. Keep in velvet box."
   },
@@ -266,7 +256,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 1999,
     rating: 4.92,
     reviewCount: 110,
-    category: "Festive",
+    category: "Thread Bangles",
     occasion: "Reception & Pooja",
     primaryColor: "Rani Pink",
     colorHex: "#C2185B",
@@ -277,10 +267,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: false,
     featured: false,
     image: "/images/bangles/gulabi-rani-pink.svg",
-    images: [
-      "/images/bangles/gulabi-rani-pink.svg"
-    ],
-    description: "Vibrant fuchsia Rani pink silk thread wrapped over solid metal cores, bordered with delicate matte gold temple ball chains and micro-beaded trims. Perfect for festive celebrations, sangeet dancing, and south Indian temple silks.",
+    images: ["/images/bangles/gulabi-rani-pink.svg"],
+    description: "Vibrant fuchsia Rani pink silk thread wrapped over solid metal cores, bordered with delicate matte gold temple ball chains and micro-beaded trims.",
     materials: "Pure Dyed Silk Yarn, Gold Plated Brass Beads, Nickel-free base",
     care: "Store individually in air-tight zip pouches to preserve the golden luster."
   },
@@ -293,7 +281,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2099,
     rating: 4.88,
     reviewCount: 82,
-    category: "Festive",
+    category: "Thread Bangles",
     occasion: "Haldi & Mehendi",
     primaryColor: "Haldi Yellow",
     colorHex: "#D4A017",
@@ -304,10 +292,8 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: false,
     featured: false,
     image: "/images/bangles/basanti-haldi-mustard.svg",
-    images: [
-      "/images/bangles/basanti-haldi-mustard.svg"
-    ],
-    description: "Bask in festive sunshine with this cheerful haldi yellow handmade silk thread bangle stack. Includes 12 hand-wrapped bangles embellished with golden gota patti rosettes and delicate bead borders for festive haldi and mehendi celebrations.",
+    images: ["/images/bangles/basanti-haldi-mustard.svg"],
+    description: "Bask in festive sunshine with this cheerful haldi yellow handmade silk thread bangle stack. Includes 12 hand-wrapped bangles embellished with golden gota patti rosettes and delicate bead borders.",
     materials: "Mustard Gold Silk Thread, Gota Patti Lace, Solid Brass Core, Gold-toned Trims",
     care: "Store in dry silk pouches. Do not expose to moisture."
   },
@@ -320,7 +306,7 @@ const INITIAL_PRODUCTS: Product[] = [
     originalPrice: 2799,
     rating: 4.91,
     reviewCount: 52,
-    category: "Kada",
+    category: "Thread Bangles",
     occasion: "Sangeet & Festive",
     primaryColor: "Peacock Blue",
     colorHex: "#10375C",
@@ -331,93 +317,214 @@ const INITIAL_PRODUCTS: Product[] = [
     isNew: false,
     featured: false,
     image: "/images/bangles/neelam-peacock-blue.svg",
-    images: [
-      "/images/bangles/neelam-peacock-blue.svg"
-    ],
+    images: ["/images/bangles/neelam-peacock-blue.svg"],
     description: "Stately peacock blue silk thread wrapped on broad statement kadas, crowned with blooming floral Kundan chakris and dangling gold bell charms that chime with movement.",
     materials: "Royal Blue Mulberry Silk, Kundan Stones, Gold-toned Ghungroos",
     care: "Keep in dry container; avoid damp vanity tables."
   },
+
+  // === 2. EARRING STUDS ===
   {
-    id: "prod-9",
-    slug: "chandrakala-mint-green-mirror-set",
-    name: "Chandrakala Mint Silk & Mirrorwork Bangles",
-    subtitle: "Pastel Mint Green Handmade Bangles with Real Hand-Embroidered Mirrors",
-    price: 1599,
-    originalPrice: 2099,
-    rating: 4.86,
-    reviewCount: 38,
-    category: "Kundan",
-    occasion: "Mehendi & Day Wedding",
-    primaryColor: "Mint Sage",
-    colorHex: "#7A9A8B",
-    sizes: ["2.2", "2.4", "2.6", "2.8"],
-    pieces: "Set of 10 Handmade Bangles",
+    id: "prod-stud-1",
+    slug: "kemp-lotus-thread-studs",
+    name: "Kemp Lotus Temple Silk Thread Studs",
+    subtitle: "South Indian Temple Kemp Stone Lotus Flower Silk Studs in Emerald & Ruby",
+    price: 499,
+    originalPrice: 799,
+    rating: 4.96,
+    reviewCount: 84,
+    category: "Earring Studs",
+    occasion: "Temple & Festive",
+    primaryColor: "Royal Emerald",
+    colorHex: "#114B3E",
+    sizes: ["Push Back", "Screw Back", "Clip-On"],
+    pieces: "Pair (2 Handmade Silk Studs)",
+    stock: 24,
+    isBestSeller: true,
+    isNew: true,
+    featured: true,
+    image: "/images/studs/kemp-lotus-thread-studs.svg",
+    images: ["/images/studs/kemp-lotus-thread-studs.svg"],
+    description: "Exquisite South Indian temple-style silk thread button studs wrapped in royal emerald green pure mulberry silk. Bordered by an antique gold ball chain and crowned with hand-set ruby kemp lotus petals and center pearl roundel.",
+    materials: "100% Pure Mulberry Silk Yarn, Kemp Austrian Red Stones, Hypoallergenic Gold Plated Brass Base",
+    care: "Avoid moisture and perfumes. Keep in presentation box provided."
+  },
+  {
+    id: "prod-stud-2",
+    slug: "silk-thread-kundan-floral-studs",
+    name: "Royal Silk Thread Kundan Floral Studs",
+    subtitle: "Crimson Red Silk Button Studs with Uncut Kundan Centerpiece & Freshwater Pearl Halo",
+    price: 599,
+    originalPrice: 899,
+    rating: 4.94,
+    reviewCount: 68,
+    category: "Earring Studs",
+    occasion: "Bridal & Wedding",
+    primaryColor: "Crimson Red",
+    colorHex: "#8B1824",
+    sizes: ["Push Back", "Screw Back", "Clip-On"],
+    pieces: "Pair (2 Handmade Kundan Studs)",
+    stock: 18,
+    isBestSeller: true,
+    isNew: true,
+    featured: true,
+    image: "/images/studs/silk-thread-kundan-studs.svg",
+    images: ["/images/studs/silk-thread-kundan-studs.svg"],
+    description: "Regal bridal studs wrapped in deep crimson red mulberry silk thread with a double rope gold bezel. Features an uncut jadau kundan stone encircled by sixteen luminous freshwater seed pearls.",
+    materials: "Crimson Mulberry Silk, Jadau Hydro Kundan, Seed Pearls, Gold-plated Base",
+    care: "Store individually in air-tight zip pouches."
+  },
+  {
+    id: "prod-stud-3",
+    slug: "rani-pink-mirror-silk-studs",
+    name: "Rani Pink Mirrorwork Silk Button Studs",
+    subtitle: "Handcrafted Fuchsia Pink Silk Studs with Real Mirror Glass & Gold Beaded Trim",
+    price: 449,
+    originalPrice: 699,
+    rating: 4.91,
+    reviewCount: 52,
+    category: "Earring Studs",
+    occasion: "Sangeet & Haldi",
+    primaryColor: "Rani Pink",
+    colorHex: "#C2185B",
+    sizes: ["Push Back", "Screw Back"],
+    pieces: "Pair (2 Handmade Mirror Studs)",
+    stock: 20,
+    isBestSeller: false,
+    isNew: true,
+    featured: false,
+    image: "/images/studs/rani-pink-mirror-studs.svg",
+    images: ["/images/studs/rani-pink-mirror-studs.svg"],
+    description: "Playful and radiant fuchsia pink silk thread button studs centering a circular glass mirror framed in gold filigree and delicate beadwork. Pairs effortlessly with festive lehengas.",
+    materials: "Rani Pink Pure Silk, Glass Mirror, Gold Electroplated Ball Chain, Hypoallergenic Posts",
+    care: "Protect from drops and water."
+  },
+  {
+    id: "prod-stud-4",
+    slug: "antique-kasu-coin-silk-studs",
+    name: "Antique Lakshmi Kasu Coin Silk Studs",
+    subtitle: "Golden Haldi Silk Button Studs with Temple Kasu Coins & Pearl Border",
+    price: 549,
+    originalPrice: 799,
+    rating: 4.93,
+    reviewCount: 42,
+    category: "Earring Studs",
+    occasion: "Pooja & Festive",
+    primaryColor: "Haldi Yellow",
+    colorHex: "#D4A017",
+    sizes: ["Push Back", "Clip-On"],
+    pieces: "Pair (2 Handmade Kasu Studs)",
     stock: 16,
     isBestSeller: false,
     isNew: false,
     featured: false,
-    image: "/images/bangles/chandrakala-mint-mirror.svg",
-    images: [
-      "/images/bangles/chandrakala-mint-mirror.svg"
-    ],
-    description: "Soothing mint green silk thread wrapped with precision, accentuated by micro circular mirrors framed in silver thread loops. Breathtaking for spring/summer daytime celebrations.",
-    materials: "Mint Green Silk Thread, Silver Thread, Lightweight Glass Mirrors, Brass base",
-    care: "Protect mirrors from hard surfaces and dropping."
+    image: "/images/studs/antique-coin-silk-studs.svg",
+    images: ["/images/studs/antique-coin-silk-studs.svg"],
+    description: "Traditional South Indian Lakshmi Kasu coin embossed in matte gold, mounted on bright golden mustard silk thread and bordered with delicate seed pearls.",
+    materials: "Mustard Silk Thread, Antique Brass Kasu Coins, Pearl Trim",
+    care: "Wipe with dry microfiber cloth."
+  },
+
+  // === 3. JHUMKAS ===
+  {
+    id: "prod-jhumka-1",
+    slug: "royal-emerald-bell-silk-jhumka",
+    name: "Royal Emerald Bell Silk Thread Jhumkas",
+    subtitle: "Peacock Green Bell Jhumkas with Seed Pearl Droplets & Floral Stud Top",
+    price: 799,
+    originalPrice: 1199,
+    rating: 4.98,
+    reviewCount: 112,
+    category: "Jhumkas",
+    occasion: "Bridal & Festive",
+    primaryColor: "Royal Emerald",
+    colorHex: "#114B3E",
+    sizes: ["Push Back", "Screw Back", "Clip-On"],
+    pieces: "Pair (2 Hanging Bell Jhumkas)",
+    stock: 15,
+    isBestSeller: true,
+    isNew: true,
+    featured: true,
+    image: "/images/jhumkas/royal-emerald-silk-jhumka.svg",
+    images: ["/images/jhumkas/royal-emerald-silk-jhumka.svg"],
+    description: "Grand handcrafted silk thread bell jhumkas in royal emerald green. Accented with golden filigree waistband, hanging seed pearl latkans, and a matching silk stud top with pearl roundel.",
+    materials: "Emerald Silk Yarn, Brass Bell Core, Freshwater Seed Pearls, 24K Gold Polish Caps",
+    care: "Keep suspended or flat in presentation box."
   },
   {
-    id: "prod-10",
-    slug: "surya-amber-kundan-kada-pair",
-    name: "Surya Amber Kundan Statement Kada Pair",
-    subtitle: "Pair of 2 Broad Handmade Silk Thread Statement Bangles with Uncut Jadau Kundan",
-    price: 1999,
-    originalPrice: 2599,
-    rating: 4.93,
-    reviewCount: 46,
-    category: "Kada",
-    occasion: "Reception & Festive",
-    primaryColor: "Mustard Gold",
-    colorHex: "#D4A017",
-    sizes: ["2.4", "2.6", "2.8"],
-    pieces: "Pair (2 Statement Kada Bangles)",
-    stock: 12,
+    id: "prod-jhumka-2",
+    slug: "maharani-crimson-kundan-bridal-jhumka",
+    name: "Maharani Crimson Kundan Bridal Jhumkas",
+    subtitle: "Dual-Tier Deep Red Silk Bridal Jhumkas with Jadau Kundan Top & Pearl Latkans",
+    price: 999,
+    originalPrice: 1499,
+    rating: 4.97,
+    reviewCount: 96,
+    category: "Jhumkas",
+    occasion: "Bridal & Wedding",
+    primaryColor: "Crimson Red",
+    colorHex: "#8B1824",
+    sizes: ["Push Back", "Screw Back", "Clip-On"],
+    pieces: "Pair (2 Grand Bridal Jhumkas)",
+    stock: 10,
+    isBestSeller: true,
+    isNew: false,
+    featured: true,
+    image: "/images/jhumkas/crimson-kundan-bridal-jhumka.svg",
+    images: ["/images/jhumkas/crimson-kundan-bridal-jhumka.svg"],
+    description: "Heirloom bridal jhumkas wrapped in royal crimson silk yarn with uncut jadau kundan floral top and large silk bell dome. Bordered with a cascade of seed pearls and gold ghungroo latkans.",
+    materials: "Crimson Mulberry Silk, Hydro Kundan, Pearls, Brass Bell Foundation",
+    care: "Store in soft velvet pouch."
+  },
+  {
+    id: "prod-jhumka-3",
+    slug: "peacock-blue-chandbali-silk-jhumka",
+    name: "Peacock Blue Chandbali Crescent Silk Jhumkas",
+    subtitle: "Royal Blue Crescent Moon Chandbali with Hanging Silk Jhumka Dome",
+    price: 899,
+    originalPrice: 1299,
+    rating: 4.92,
+    reviewCount: 74,
+    category: "Jhumkas",
+    occasion: "Sangeet & Reception",
+    primaryColor: "Peacock Blue",
+    colorHex: "#10375C",
+    sizes: ["Push Back", "Screw Back"],
+    pieces: "Pair (2 Chandbali Jhumkas)",
+    stock: 14,
     isBestSeller: false,
     isNew: true,
     featured: false,
-    image: "/images/bangles/surya-amber-kundan.svg",
-    images: [
-      "/images/bangles/surya-amber-kundan.svg"
-    ],
-    description: "Rich amber-gold mulberry silk wrapped firmly around high-density brass kadas, highlighted with raised floral Kundan centerstones and twisted bullion zari boundaries.",
-    materials: "Pure Silk Yarn, Brass Kada Foundation, Jadau Hydro Kundan, Gold Zari",
-    care: "Keep in dry container; avoid perfumes."
+    image: "/images/jhumkas/peacock-blue-chandbali-jhumka.svg",
+    images: ["/images/jhumkas/peacock-blue-chandbali-jhumka.svg"],
+    description: "Dramatic combination of a handcrafted royal blue silk crescent moon (chandbali) and a swinging bell jhumka dome. Embellished with pearls and gold detailing for royal Indian events.",
+    materials: "Cobalt Blue Silk Thread, Chandbali Frame, Pearl Droplets, Gold Trim",
+    care: "Handle with care; avoid moisture."
   },
   {
-    id: "prod-11",
-    slug: "navratna-festive-silk-bangle-stack",
-    name: "Navratna Multicolored Silk Bangle Stack",
-    subtitle: "Set of 16 Handcrafted Rainbow Silk Thread Bangles for Festive Wear",
-    price: 1799,
-    originalPrice: 2399,
-    rating: 4.89,
-    reviewCount: 58,
-    category: "Festive",
-    occasion: "Navratri & Festive",
-    primaryColor: "Rani Pink",
-    colorHex: "#C2185B",
-    sizes: ["2.2", "2.4", "2.6", "2.8"],
-    pieces: "Set of 16 Handmade Bangles",
+    id: "prod-jhumka-4",
+    slug: "sunshine-haldi-silk-ghungroo-jhumka",
+    name: "Sunshine Haldi Silk Jhumkas with Ghungroos",
+    subtitle: "Golden Mustard Mini Dome Jhumkas with Chiming Gold Bells for Festive Wear",
+    price: 699,
+    originalPrice: 999,
+    rating: 4.90,
+    reviewCount: 56,
+    category: "Jhumkas",
+    occasion: "Haldi & Mehendi",
+    primaryColor: "Haldi Yellow",
+    colorHex: "#D4A017",
+    sizes: ["Push Back", "Clip-On"],
+    pieces: "Pair (2 Festive Mini Jhumkas)",
     stock: 22,
     isBestSeller: true,
     isNew: false,
     featured: false,
-    image: "/images/bangles/navratna-rainbow-silk.svg",
-    images: [
-      "/images/bangles/navratna-rainbow-silk.svg"
-    ],
-    description: "A joyful stack of 16 hand-wrapped silk thread bangles celebrating nine festive shades. Each bangle features subtle micro gold bead edging to layer effortlessly with any Indian attire.",
-    materials: "Multi-ply Pure Silk Thread, Metal Bangle Core, Gold Electroplated Glass Beads",
-    care: "Store in zip pouches to maintain luster."
+    image: "/images/jhumkas/sunshine-haldi-silk-jhumka.svg",
+    images: ["/images/jhumkas/sunshine-haldi-silk-jhumka.svg"],
+    description: "Lightweight and joyful haldi yellow handmade silk thread jhumkas trimmed with tiny gold chiming ghungroo bells and fuchsia pink crystal accents.",
+    materials: "Haldi Silk Yarn, Gold Plated Ghungroos, Czech Pink Crystals",
+    care: "Store in dry box away from humidity."
   }
 ];
 
@@ -445,10 +552,12 @@ const CUSTOM_EMBELLISHMENTS = [
 ];
 
 const CUSTOM_SET_TYPES = [
-  { id: 'pair', name: 'Pair (2 Handmade Kadas)', basePrice: 999, count: 2 },
-  { id: 'set4', name: 'Set of 4 Handmade Kadas', basePrice: 1699, count: 4 },
-  { id: 'stack12', name: 'Festive Stack of 12 Bangles', basePrice: 2299, count: 12 },
-  { id: 'bridal24', name: 'Full 24-Piece Bridal Chooda Bangles', basePrice: 3499, count: 24 }
+  { id: 'pair', name: 'Pair of Handmade Thread Bangles', basePrice: 999, count: 2 },
+  { id: 'set4', name: 'Set of 4 Thread Kadas', basePrice: 1699, count: 4 },
+  { id: 'stack12', name: 'Festive Stack of 12 Thread Bangles', basePrice: 2299, count: 12 },
+  { id: 'bridal24', name: 'Full 24-Piece Bridal Chooda Bangles', basePrice: 3499, count: 24 },
+  { id: 'studs', name: 'Pair of Silk Thread Earring Studs', basePrice: 499, count: 2 },
+  { id: 'jhumkas', name: 'Pair of Royal Silk Thread Bell Jhumkas', basePrice: 799, count: 2 }
 ];
 
 // --- Standard Indian Bangle Sizing Chart ---

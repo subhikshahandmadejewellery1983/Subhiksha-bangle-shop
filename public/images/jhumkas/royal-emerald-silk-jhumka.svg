@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="jhumkaBoutiqueBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="50%" stop-color="#F7EFE6"/>
+      <stop offset="100%" stop-color="#DECEBE"/>
+    </radialGradient>
+    <linearGradient id="silkEmeraldJhumka" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#04261C"/>
+      <stop offset="25%" stop-color="#0B5640"/>
+      <stop offset="50%" stop-color="#14966F"/>
+      <stop offset="75%" stop-color="#0B5640"/>
+      <stop offset="100%" stop-color="#04261C"/>
+    </linearGradient>
+    <linearGradient id="goldCapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8F6A1E"/>
+      <stop offset="35%" stop-color="#E5BA4E"/>
+      <stop offset="60%" stop-color="#FFF5BD"/>
+      <stop offset="85%" stop-color="#D19E2B"/>
+      <stop offset="100%" stop-color="#694B0A"/>
+    </linearGradient>
+    <radialGradient id="jhumkaPearl" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F5EFE3"/>
+      <stop offset="100%" stop-color="#C7BCA7"/>
+    </radialGradient>
+    <filter id="jhumkaShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#241B10" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#jhumkaBoutiqueBg)"/>
+  <ellipse cx="400" cy="680" rx="300" ry="50" fill="#C9B7A5" opacity="0.4"/>
+
+  <!-- Left Jhumka -->
+  <g transform="translate(260, 240)" filter="url(#jhumkaShadow)">
+    <!-- Top Earring Stud Component -->
+    <g>
+      <circle cx="0" cy="0" r="42" fill="url(#silkEmeraldJhumka)"/>
+      <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldCapGrad)" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="24" fill="url(#goldCapGrad)"/>
+      <circle cx="0" cy="0" r="16" fill="url(#jhumkaPearl)"/>
+    </g>
+
+    <!-- Connecting Gold Ring Link -->
+    <ellipse cx="0" cy="54" rx="8" ry="12" fill="none" stroke="url(#goldCapGrad)" stroke-width="3"/>
+
+    <!-- Bell Jhumka Top Gold Filigree Cap -->
+    <path d="M-30,76 Q0,62 30,76 L40,94 Q0,86 -40,94 Z" fill="url(#goldCapGrad)"/>
+    <circle cx="0" cy="74" r="5" fill="url(#goldCapGrad)"/>
+
+    <!-- Main Handcrafted Silk Thread Bell Dome (Jhumka Cup) -->
+    <path d="M-95,240 C-95,120 -60,94 0,94 C60,94 95,120 95,240 C60,256 -60,256 -95,240 Z" fill="url(#silkEmeraldJhumka)"/>
+    
+    <!-- Vertical Silk Wrapping Lines -->
+    <path d="M-75,230 C-75,130 -45,100 0,95" fill="none" stroke="#169C74" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-50,242 C-50,135 -30,100 0,95" fill="none" stroke="#0E6B50" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-25,248 C-25,140 -15,100 0,95" fill="none" stroke="#19B587" stroke-width="1.5" opacity="0.6"/>
+    <path d="M0,250 L0,95" fill="none" stroke="#21D6A0" stroke-width="1.8" opacity="0.7"/>
+    <path d="M25,248 C25,140 15,100 0,95" fill="none" stroke="#19B587" stroke-width="1.5" opacity="0.6"/>
+    <path d="M50,242 C50,135 30,100 0,95" fill="none" stroke="#0E6B50" stroke-width="1.5" opacity="0.6"/>
+    <path d="M75,230 C75,130 45,100 0,95" fill="none" stroke="#169C74" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Middle Ornamental Gold Floral Waistband on Jhumka -->
+    <path d="M-82,185 Q0,205 82,185 Q0,195 -82,185 Z" fill="url(#goldCapGrad)"/>
+    <circle cx="-50" cy="190" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="-25" cy="195" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="0" cy="196" r="5" fill="url(#jhumkaPearl)"/>
+    <circle cx="25" cy="195" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="50" cy="190" r="4" fill="url(#jhumkaPearl)"/>
+
+    <!-- Bottom Gold Rim with Bead Loops -->
+    <path d="M-95,240 Q0,258 95,240 Q0,250 -95,240 Z" fill="url(#goldCapGrad)"/>
+
+    <!-- Hanging Micro-Pearl Droplets (Latkans) around rim -->
+    <g>
+      <circle cx="-85" cy="256" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-65" cy="265" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-45" cy="271" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-25" cy="275" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="0" cy="277" r="7" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1.2"/>
+      <circle cx="25" cy="275" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="45" cy="271" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="65" cy="265" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="85" cy="256" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+    </g>
+
+    <!-- Center Long Hanging Pearl Drop Tassel -->
+    <line x1="0" y1="250" x2="0" y2="305" stroke="url(#goldCapGrad)" stroke-width="2"/>
+    <circle cx="0" cy="295" r="5" fill="url(#goldCapGrad)"/>
+    <circle cx="0" cy="312" r="9" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+  </g>
+
+  <!-- Right Jhumka -->
+  <g transform="translate(540, 240)" filter="url(#jhumkaShadow)">
+    <g>
+      <circle cx="0" cy="0" r="42" fill="url(#silkEmeraldJhumka)"/>
+      <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldCapGrad)" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="24" fill="url(#goldCapGrad)"/>
+      <circle cx="0" cy="0" r="16" fill="url(#jhumkaPearl)"/>
+    </g>
+
+    <ellipse cx="0" cy="54" rx="8" ry="12" fill="none" stroke="url(#goldCapGrad)" stroke-width="3"/>
+    <path d="M-30,76 Q0,62 30,76 L40,94 Q0,86 -40,94 Z" fill="url(#goldCapGrad)"/>
+    <circle cx="0" cy="74" r="5" fill="url(#goldCapGrad)"/>
+
+    <path d="M-95,240 C-95,120 -60,94 0,94 C60,94 95,120 95,240 C60,256 -60,256 -95,240 Z" fill="url(#silkEmeraldJhumka)"/>
+    
+    <path d="M-75,230 C-75,130 -45,100 0,95" fill="none" stroke="#169C74" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-50,242 C-50,135 -30,100 0,95" fill="none" stroke="#0E6B50" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-25,248 C-25,140 -15,100 0,95" fill="none" stroke="#19B587" stroke-width="1.5" opacity="0.6"/>
+    <path d="M0,250 L0,95" fill="none" stroke="#21D6A0" stroke-width="1.8" opacity="0.7"/>
+    <path d="M25,248 C25,140 15,100 0,95" fill="none" stroke="#19B587" stroke-width="1.5" opacity="0.6"/>
+    <path d="M50,242 C50,135 30,100 0,95" fill="none" stroke="#0E6B50" stroke-width="1.5" opacity="0.6"/>
+    <path d="M75,230 C75,130 45,100 0,95" fill="none" stroke="#169C74" stroke-width="1.5" opacity="0.6"/>
+
+    <path d="M-82,185 Q0,205 82,185 Q0,195 -82,185 Z" fill="url(#goldCapGrad)"/>
+    <circle cx="-50" cy="190" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="-25" cy="195" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="0" cy="196" r="5" fill="url(#jhumkaPearl)"/>
+    <circle cx="25" cy="195" r="4" fill="url(#jhumkaPearl)"/>
+    <circle cx="50" cy="190" r="4" fill="url(#jhumkaPearl)"/>
+
+    <path d="M-95,240 Q0,258 95,240 Q0,250 -95,240 Z" fill="url(#goldCapGrad)"/>
+
+    <g>
+      <circle cx="-85" cy="256" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-65" cy="265" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-45" cy="271" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="-25" cy="275" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="0" cy="277" r="7" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1.2"/>
+      <circle cx="25" cy="275" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="45" cy="271" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="65" cy="265" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+      <circle cx="85" cy="256" r="6" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+    </g>
+
+    <line x1="0" y1="250" x2="0" y2="305" stroke="url(#goldCapGrad)" stroke-width="2"/>
+    <circle cx="0" cy="295" r="5" fill="url(#goldCapGrad)"/>
+    <circle cx="0" cy="312" r="9" fill="url(#jhumkaPearl)" stroke="url(#goldCapGrad)" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bridalJhumkaBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="50%" stop-color="#FBF0E9"/>
+      <stop offset="100%" stop-color="#DEC9B7"/>
+    </radialGradient>
+    <linearGradient id="silkCrimsonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#690915"/>
+      <stop offset="25%" stop-color="#A81525"/>
+      <stop offset="50%" stop-color="#E52C3E"/>
+      <stop offset="75%" stop-color="#A81525"/>
+      <stop offset="100%" stop-color="#690915"/>
+    </linearGradient>
+    <linearGradient id="bridalGoldChakri" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#916B1C"/>
+      <stop offset="35%" stop-color="#E8BF54"/>
+      <stop offset="60%" stop-color="#FFF8C4"/>
+      <stop offset="85%" stop-color="#D19E2B"/>
+      <stop offset="100%" stop-color="#6B4B08"/>
+    </linearGradient>
+    <radialGradient id="bridalPearl" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#D1C6AF"/>
+    </radialGradient>
+    <radialGradient id="kundanFoil" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FFFEEF"/>
+      <stop offset="100%" stop-color="#E3D7BA"/>
+    </radialGradient>
+    <filter id="crimsonShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#300B10" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bridalJhumkaBg)"/>
+  <ellipse cx="400" cy="690" rx="300" ry="50" fill="#CCAFA0" opacity="0.38"/>
+
+  <!-- Left Jhumka -->
+  <g transform="translate(260, 230)" filter="url(#crimsonShadow)">
+    <!-- Top Stud: Floral Kundan with Silk Frame -->
+    <g>
+      <circle cx="0" cy="0" r="46" fill="url(#silkCrimsonGrad)"/>
+      <circle cx="0" cy="0" r="44" fill="none" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+      <!-- 6 Outer Kundan Petals -->
+      <circle cx="0" cy="-24" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="21" cy="-12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="21" cy="12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="0" cy="24" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="-21" cy="12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="-21" cy="-12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <!-- Center Red Gemstone -->
+      <circle cx="0" cy="0" r="10" fill="#990E1F" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+    </g>
+
+    <!-- Joint Gold Chain links -->
+    <path d="M-6,48 L-6,68 M6,48 L6,68" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+
+    <!-- Filigree Crown Cap -->
+    <path d="M-36,78 C-18,65 18,65 36,78 L45,95 C15,88 -15,88 -45,95 Z" fill="url(#bridalGoldChakri)"/>
+
+    <!-- Large Silk Thread Bell Dome -->
+    <path d="M-100,250 C-100,120 -65,95 0,95 C65,95 100,120 100,250 C65,268 -65,268 -100,250 Z" fill="url(#silkCrimsonGrad)"/>
+    
+    <!-- Fine Thread Weave Ribs -->
+    <path d="M-80,240 C-80,130 -50,102 0,96" fill="none" stroke="#B81A2A" stroke-width="1.6" opacity="0.6"/>
+    <path d="M-55,252 C-55,138 -32,102 0,96" fill="none" stroke="#7A0A16" stroke-width="1.6" opacity="0.6"/>
+    <path d="M-28,260 C-28,142 -15,102 0,96" fill="none" stroke="#E62C40" stroke-width="1.6" opacity="0.6"/>
+    <path d="M0,262 L0,96" fill="none" stroke="#FF4D61" stroke-width="2" opacity="0.75"/>
+    <path d="M28,260 C28,142 15,102 0,96" fill="none" stroke="#E62C40" stroke-width="1.6" opacity="0.6"/>
+    <path d="M55,252 C55,138 32,102 0,96" fill="none" stroke="#7A0A16" stroke-width="1.6" opacity="0.6"/>
+    <path d="M80,240 C80,130 50,102 0,96" fill="none" stroke="#B81A2A" stroke-width="1.6" opacity="0.6"/>
+
+    <!-- Waist Kundan Band -->
+    <path d="M-88,190 Q0,212 88,190 Q0,200 -88,190 Z" fill="url(#bridalGoldChakri)"/>
+    <circle cx="-55" cy="195" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="-28" cy="200" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="0" cy="202" r="6" fill="url(#kundanFoil)"/>
+    <circle cx="28" cy="200" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="55" cy="195" r="5" fill="url(#kundanFoil)"/>
+
+    <!-- Bottom Rim -->
+    <path d="M-100,250 Q0,270 100,250 Q0,260 -100,250 Z" fill="url(#bridalGoldChakri)"/>
+
+    <!-- Hanging Pearls (Latkan cluster) -->
+    <g>
+      <circle cx="-90" cy="268" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-70" cy="278" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-48" cy="285" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-25" cy="289" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="0" cy="291" r="7.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1.2"/>
+      <circle cx="25" cy="289" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="48" cy="285" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="70" cy="278" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="90" cy="268" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+    </g>
+
+    <!-- Center Pearl & Gold Ghungroo Tassel -->
+    <line x1="0" y1="260" x2="0" y2="320" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+    <circle cx="0" cy="310" r="5.5" fill="url(#bridalGoldChakri)"/>
+    <circle cx="0" cy="330" r="10" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Right Jhumka -->
+  <g transform="translate(540, 230)" filter="url(#crimsonShadow)">
+    <g>
+      <circle cx="0" cy="0" r="46" fill="url(#silkCrimsonGrad)"/>
+      <circle cx="0" cy="0" r="44" fill="none" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+      <circle cx="0" cy="-24" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="21" cy="-12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="21" cy="12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="0" cy="24" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="-21" cy="12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="-21" cy="-12" r="8" fill="url(#kundanFoil)" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="10" fill="#990E1F" stroke="url(#bridalGoldChakri)" stroke-width="1.5"/>
+    </g>
+
+    <path d="M-6,48 L-6,68 M6,48 L6,68" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+    <path d="M-36,78 C-18,65 18,65 36,78 L45,95 C15,88 -15,88 -45,95 Z" fill="url(#bridalGoldChakri)"/>
+
+    <path d="M-100,250 C-100,120 -65,95 0,95 C65,95 100,120 100,250 C65,268 -65,268 -100,250 Z" fill="url(#silkCrimsonGrad)"/>
+    
+    <path d="M-80,240 C-80,130 -50,102 0,96" fill="none" stroke="#B81A2A" stroke-width="1.6" opacity="0.6"/>
+    <path d="M-55,252 C-55,138 -32,102 0,96" fill="none" stroke="#7A0A16" stroke-width="1.6" opacity="0.6"/>
+    <path d="M-28,260 C-28,142 -15,102 0,96" fill="none" stroke="#E62C40" stroke-width="1.6" opacity="0.6"/>
+    <path d="M0,262 L0,96" fill="none" stroke="#FF4D61" stroke-width="2" opacity="0.75"/>
+    <path d="M28,260 C28,142 15,102 0,96" fill="none" stroke="#E62C40" stroke-width="1.6" opacity="0.6"/>
+    <path d="M55,252 C55,138 32,102 0,96" fill="none" stroke="#7A0A16" stroke-width="1.6" opacity="0.6"/>
+    <path d="M80,240 C80,130 50,102 0,96" fill="none" stroke="#B81A2A" stroke-width="1.6" opacity="0.6"/>
+
+    <path d="M-88,190 Q0,212 88,190 Q0,200 -88,190 Z" fill="url(#bridalGoldChakri)"/>
+    <circle cx="-55" cy="195" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="-28" cy="200" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="0" cy="202" r="6" fill="url(#kundanFoil)"/>
+    <circle cx="28" cy="200" r="5" fill="url(#kundanFoil)"/>
+    <circle cx="55" cy="195" r="5" fill="url(#kundanFoil)"/>
+
+    <path d="M-100,250 Q0,270 100,250 Q0,260 -100,250 Z" fill="url(#bridalGoldChakri)"/>
+
+    <g>
+      <circle cx="-90" cy="268" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-70" cy="278" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-48" cy="285" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="-25" cy="289" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="0" cy="291" r="7.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1.2"/>
+      <circle cx="25" cy="289" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="48" cy="285" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="70" cy="278" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+      <circle cx="90" cy="268" r="6.5" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1"/>
+    </g>
+
+    <line x1="0" y1="260" x2="0" y2="320" stroke="url(#bridalGoldChakri)" stroke-width="2.5"/>
+    <circle cx="0" cy="310" r="5.5" fill="url(#bridalGoldChakri)"/>
+    <circle cx="0" cy="330" r="10" fill="url(#bridalPearl)" stroke="url(#bridalGoldChakri)" stroke-width="1.2"/>
+  </g>
+</svg>

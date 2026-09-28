@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pinkBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="50%" stop-color="#FCEEF2"/>
+      <stop offset="100%" stop-color="#E8D1D8"/>
+    </radialGradient>
+    <linearGradient id="silkFuchsia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800636"/>
+      <stop offset="40%" stop-color="#C2185B"/>
+      <stop offset="70%" stop-color="#E91E63"/>
+      <stop offset="100%" stop-color="#880E4F"/>
+    </linearGradient>
+    <linearGradient id="goldChains" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A57A22"/>
+      <stop offset="35%" stop-color="#F2C75C"/>
+      <stop offset="60%" stop-color="#FFF4B8"/>
+      <stop offset="85%" stop-color="#D9A632"/>
+      <stop offset="100%" stop-color="#735111"/>
+    </linearGradient>
+    <radialGradient id="glassMirror" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#F5F5FA"/>
+      <stop offset="70%" stop-color="#DDE2EB"/>
+      <stop offset="100%" stop-color="#B0BAC9"/>
+    </radialGradient>
+    <filter id="mirrorDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="15" flood-color="#3D1222" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#pinkBg)"/>
+  <ellipse cx="400" cy="590" rx="280" ry="60" fill="#DDBBC8" opacity="0.35"/>
+
+  <!-- Left Stud -->
+  <g transform="translate(260, 390)" filter="url(#mirrorDrop)">
+    <circle cx="0" cy="0" r="105" fill="url(#silkFuchsia)"/>
+    <circle cx="0" cy="0" r="98" fill="none" stroke="#D81B60" stroke-width="1.8" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#AD1457" stroke-width="1.8" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="78" fill="none" stroke="#F06292" stroke-width="1.8" stroke-dasharray="4,2" opacity="0.6"/>
+
+    <!-- Gold Ball Edging Outer Ring -->
+    <circle cx="0" cy="0" r="105" fill="none" stroke="url(#goldChains)" stroke-width="6" stroke-dasharray="4,6"/>
+
+    <!-- Inner Gold Ring -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="url(#goldChains)" stroke-width="3"/>
+    
+    <!-- Real Glass Mirror Center with Gold Bezel Frame -->
+    <circle cx="0" cy="0" r="50" fill="url(#goldChains)"/>
+    <circle cx="0" cy="0" r="44" fill="url(#glassMirror)"/>
+    <!-- Mirror light reflections -->
+    <path d="M-28,-28 L28,28" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="-15" cy="-15" r="5" fill="#FFFFFF" opacity="0.95"/>
+    <circle cx="18" cy="18" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- Right Stud -->
+  <g transform="translate(540, 390)" filter="url(#mirrorDrop)">
+    <circle cx="0" cy="0" r="105" fill="url(#silkFuchsia)"/>
+    <circle cx="0" cy="0" r="98" fill="none" stroke="#D81B60" stroke-width="1.8" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#AD1457" stroke-width="1.8" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="78" fill="none" stroke="#F06292" stroke-width="1.8" stroke-dasharray="4,2" opacity="0.6"/>
+
+    <circle cx="0" cy="0" r="105" fill="none" stroke="url(#goldChains)" stroke-width="6" stroke-dasharray="4,6"/>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="url(#goldChains)" stroke-width="3"/>
+
+    <circle cx="0" cy="0" r="50" fill="url(#goldChains)"/>
+    <circle cx="0" cy="0" r="44" fill="url(#glassMirror)"/>
+    <path d="M-28,-28 L28,28" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="-15" cy="-15" r="5" fill="#FFFFFF" opacity="0.95"/>
+    <circle cx="18" cy="18" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>

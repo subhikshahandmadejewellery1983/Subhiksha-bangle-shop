@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="haldiJhumkaBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="50%" stop-color="#FDF7EA"/>
+      <stop offset="100%" stop-color="#E8DAC1"/>
+    </radialGradient>
+    <linearGradient id="silkHaldiJhumka" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#805600"/>
+      <stop offset="25%" stop-color="#BA8104"/>
+      <stop offset="50%" stop-color="#F2AF13"/>
+      <stop offset="75%" stop-color="#BA8104"/>
+      <stop offset="100%" stop-color="#805600"/>
+    </linearGradient>
+    <linearGradient id="goldHaldiCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8F6A1E"/>
+      <stop offset="35%" stop-color="#E5BA4E"/>
+      <stop offset="60%" stop-color="#FFF5BD"/>
+      <stop offset="85%" stop-color="#D19E2B"/>
+      <stop offset="100%" stop-color="#694B0A"/>
+    </linearGradient>
+    <radialGradient id="ghungrooGold" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFF8D1"/>
+      <stop offset="50%" stop-color="#F0C34B"/>
+      <stop offset="100%" stop-color="#9C7016"/>
+    </radialGradient>
+    <filter id="haldiShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#362506" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#haldiJhumkaBg)"/>
+  <ellipse cx="400" cy="680" rx="300" ry="50" fill="#D6C4A6" opacity="0.4"/>
+
+  <!-- Left Jhumka -->
+  <g transform="translate(260, 240)" filter="url(#haldiShadow)">
+    <circle cx="0" cy="0" r="42" fill="url(#silkHaldiJhumka)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldHaldiCap)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="22" fill="url(#goldHaldiCap)"/>
+    <circle cx="0" cy="0" r="14" fill="#C2185B"/>
+
+    <ellipse cx="0" cy="54" rx="8" ry="12" fill="none" stroke="url(#goldHaldiCap)" stroke-width="3"/>
+    <path d="M-30,76 Q0,62 30,76 L40,94 Q0,86 -40,94 Z" fill="url(#goldHaldiCap)"/>
+
+    <path d="M-92,238 C-92,120 -58,94 0,94 C58,94 92,120 92,238 C58,254 -58,254 -92,238 Z" fill="url(#silkHaldiJhumka)"/>
+    
+    <path d="M-72,228 C-72,130 -42,100 0,95" fill="none" stroke="#DCA212" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-48,240 C-48,135 -28,100 0,95" fill="none" stroke="#A87503" stroke-width="1.5" opacity="0.6"/>
+    <path d="M0,248 L0,95" fill="none" stroke="#FFD054" stroke-width="1.8" opacity="0.75"/>
+    <path d="M48,240 C48,135 28,100 0,95" fill="none" stroke="#A87503" stroke-width="1.5" opacity="0.6"/>
+    <path d="M72,228 C72,130 42,100 0,95" fill="none" stroke="#DCA212" stroke-width="1.5" opacity="0.6"/>
+
+    <path d="M-80,182 Q0,202 80,182 Q0,192 -80,182 Z" fill="url(#goldHaldiCap)"/>
+    <circle cx="-48" cy="187" r="4.5" fill="#C2185B"/>
+    <circle cx="-24" cy="192" r="4.5" fill="#C2185B"/>
+    <circle cx="0" cy="193" r="5.5" fill="#C2185B"/>
+    <circle cx="24" cy="192" r="4.5" fill="#C2185B"/>
+    <circle cx="48" cy="187" r="4.5" fill="#C2185B"/>
+
+    <path d="M-92,238 Q0,256 92,238 Q0,248 -92,238 Z" fill="url(#goldHaldiCap)"/>
+
+    <!-- Ghungroo Gold Bells around Rim -->
+    <g>
+      <circle cx="-82" cy="254" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-62" cy="263" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-42" cy="269" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-22" cy="273" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="0" cy="275" r="7" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="1"/>
+      <circle cx="22" cy="273" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="42" cy="269" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="62" cy="263" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="82" cy="254" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+    </g>
+
+    <line x1="0" y1="248" x2="0" y2="300" stroke="url(#goldHaldiCap)" stroke-width="2"/>
+    <circle cx="0" cy="308" r="9" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="1"/>
+  </g>
+
+  <!-- Right Jhumka -->
+  <g transform="translate(540, 240)" filter="url(#haldiShadow)">
+    <circle cx="0" cy="0" r="42" fill="url(#silkHaldiJhumka)"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldHaldiCap)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="22" fill="url(#goldHaldiCap)"/>
+    <circle cx="0" cy="0" r="14" fill="#C2185B"/>
+
+    <ellipse cx="0" cy="54" rx="8" ry="12" fill="none" stroke="url(#goldHaldiCap)" stroke-width="3"/>
+    <path d="M-30,76 Q0,62 30,76 L40,94 Q0,86 -40,94 Z" fill="url(#goldHaldiCap)"/>
+
+    <path d="M-92,238 C-92,120 -58,94 0,94 C58,94 92,120 92,238 C58,254 -58,254 -92,238 Z" fill="url(#silkHaldiJhumka)"/>
+    
+    <path d="M-72,228 C-72,130 -42,100 0,95" fill="none" stroke="#DCA212" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-48,240 C-48,135 -28,100 0,95" fill="none" stroke="#A87503" stroke-width="1.5" opacity="0.6"/>
+    <path d="M0,248 L0,95" fill="none" stroke="#FFD054" stroke-width="1.8" opacity="0.75"/>
+    <path d="M48,240 C48,135 28,100 0,95" fill="none" stroke="#A87503" stroke-width="1.5" opacity="0.6"/>
+    <path d="M72,228 C72,130 42,100 0,95" fill="none" stroke="#DCA212" stroke-width="1.5" opacity="0.6"/>
+
+    <path d="M-80,182 Q0,202 80,182 Q0,192 -80,182 Z" fill="url(#goldHaldiCap)"/>
+    <circle cx="-48" cy="187" r="4.5" fill="#C2185B"/>
+    <circle cx="-24" cy="192" r="4.5" fill="#C2185B"/>
+    <circle cx="0" cy="193" r="5.5" fill="#C2185B"/>
+    <circle cx="24" cy="192" r="4.5" fill="#C2185B"/>
+    <circle cx="48" cy="187" r="4.5" fill="#C2185B"/>
+
+    <path d="M-92,238 Q0,256 92,238 Q0,248 -92,238 Z" fill="url(#goldHaldiCap)"/>
+
+    <g>
+      <circle cx="-82" cy="254" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-62" cy="263" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-42" cy="269" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="-22" cy="273" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="0" cy="275" r="7" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="1"/>
+      <circle cx="22" cy="273" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="42" cy="269" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="62" cy="263" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+      <circle cx="82" cy="254" r="6" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="0.8"/>
+    </g>
+
+    <line x1="0" y1="248" x2="0" y2="300" stroke="url(#goldHaldiCap)" stroke-width="2"/>
+    <circle cx="0" cy="308" r="9" fill="url(#ghungrooGold)" stroke="#694B0A" stroke-width="1"/>
+  </g>
+</svg>

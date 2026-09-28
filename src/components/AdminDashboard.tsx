@@ -35,7 +35,7 @@ export interface Product {
   originalPrice: number;
   rating: number;
   reviewCount: number;
-  category: 'Bridal' | 'Kada' | 'Festive' | 'Kundan';
+  category: 'Thread Bangles' | 'Earring Studs' | 'Jhumkas' | string;
   occasion: string;
   primaryColor: string;
   colorHex: string;
@@ -110,7 +110,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 }) => {
   // Filtering & Sorting
   const [searchTerm, setSearchTerm] = useState('');
-  const [categoryFilter, setCategoryFilter] = useState<'All' | 'Bridal' | 'Kada' | 'Festive' | 'Kundan'>('All');
+  const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [stockStatusFilter, setStockStatusFilter] = useState<'All' | 'in_stock' | 'low_stock' | 'out_of_stock'>('All');
   const [sortBy, setSortBy] = useState<'stock-asc' | 'stock-desc' | 'price-desc' | 'price-asc' | 'name'>('stock-asc');
 
@@ -138,7 +138,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     originalPrice: 2499,
     rating: 4.9,
     reviewCount: 1,
-    category: 'Festive',
+    category: 'Thread Bangles',
     occasion: 'Festive & Celebration',
     primaryColor: 'Crimson Red',
     colorHex: '#8B1824',
@@ -560,7 +560,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             {/* Category Segmented Control */}
             <div className="flex items-center gap-1 overflow-x-auto pb-1 sm:pb-0">
               <span className="text-xs text-[#8C7A6B] mr-1 hidden sm:inline">Category:</span>
-              {(['All', 'Bridal', 'Kada', 'Festive', 'Kundan'] as const).map((cat) => (
+              {(['All', 'Thread Bangles', 'Earring Studs', 'Jhumkas'] as const).map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setCategoryFilter(cat)}
@@ -1122,10 +1122,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onChange={(e) => setEditingProduct({ ...editingProduct, category: e.target.value as any })}
                     className="w-full px-3 py-2 bg-[#FAF7F2] border border-[#E8D8C8] rounded-lg text-sm text-[#1A1816] focus:outline-none focus:border-[#9A7416]"
                   >
-                    <option value="Bridal">Bridal</option>
-                    <option value="Kada">Kada</option>
-                    <option value="Festive">Festive</option>
-                    <option value="Kundan">Kundan</option>
+                    <option value="Thread Bangles">Thread Bangles</option>
+                    <option value="Earring Studs">Earring Studs</option>
+                    <option value="Jhumkas">Jhumkas</option>
                   </select>
                 </div>
 
@@ -1472,10 +1471,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onChange={(e) => setNewProductDraft({ ...newProductDraft, category: e.target.value as any })}
                     className="w-full px-3 py-2 bg-[#FAF7F2] border border-[#E8D8C8] rounded-lg text-sm text-[#1A1816] focus:outline-none focus:border-[#9A7416]"
                   >
-                    <option value="Bridal">Bridal</option>
-                    <option value="Kada">Kada</option>
-                    <option value="Festive">Festive</option>
-                    <option value="Kundan">Kundan</option>
+                    <option value="Thread Bangles">Thread Bangles</option>
+                    <option value="Earring Studs">Earring Studs</option>
+                    <option value="Jhumkas">Jhumkas</option>
                   </select>
                 </div>
 

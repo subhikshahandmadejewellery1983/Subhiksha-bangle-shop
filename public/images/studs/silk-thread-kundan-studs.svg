@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="boutiqueStudBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="50%" stop-color="#F9F1E8"/>
+      <stop offset="100%" stop-color="#E2D4C3"/>
+    </radialGradient>
+    <radialGradient id="studPedestal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EADDCF" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#CBB5A0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#CBB5A0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silkRuby" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#780816"/>
+      <stop offset="35%" stop-color="#B21828"/>
+      <stop offset="60%" stop-color="#E62C40"/>
+      <stop offset="85%" stop-color="#9E1222"/>
+      <stop offset="100%" stop-color="#54050F"/>
+    </linearGradient>
+    <linearGradient id="silkEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04261C"/>
+      <stop offset="45%" stop-color="#0E634B"/>
+      <stop offset="75%" stop-color="#1DB88A"/>
+      <stop offset="100%" stop-color="#052F22"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A57A22"/>
+      <stop offset="30%" stop-color="#F2C75C"/>
+      <stop offset="55%" stop-color="#FFF4B8"/>
+      <stop offset="80%" stop-color="#D9A632"/>
+      <stop offset="100%" stop-color="#735111"/>
+    </linearGradient>
+    <radialGradient id="kundanGlow" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FFFDF0"/>
+      <stop offset="85%" stop-color="#E8D9B5"/>
+      <stop offset="100%" stop-color="#C2AE85"/>
+    </radialGradient>
+    <radialGradient id="pearlShine" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#FFFDF7"/>
+      <stop offset="80%" stop-color="#EAE3D2"/>
+      <stop offset="100%" stop-color="#C9BFA8"/>
+    </radialGradient>
+    <filter id="softDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#3B2613" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#boutiqueStudBg)"/>
+  <ellipse cx="400" cy="580" rx="260" ry="60" fill="url(#studPedestal)"/>
+
+  <!-- Left Stud -->
+  <g transform="translate(260, 390)" filter="url(#softDropShadow)">
+    <!-- Silk Base Disc -->
+    <circle cx="0" cy="0" r="105" fill="url(#silkRuby)"/>
+    <!-- Concentric Silk Thread Lines Texture -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#C72234" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#9E1222" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="84" fill="none" stroke="#E62C40" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#780816" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+    
+    <!-- Outer Pearl Halo (16 Pearls) -->
+    <g>
+      <circle cx="0" cy="-105" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="41" cy="-97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="74" cy="-74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="97" cy="-41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="105" cy="0" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="97" cy="41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="74" cy="74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="41" cy="97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="0" cy="105" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-41" cy="97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-74" cy="74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-97" cy="41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-105" cy="0" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-97" cy="-41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-74" cy="-74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-41" cy="-97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+    </g>
+
+    <!-- Gold Rope Ring -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="url(#goldTrim)" stroke-width="4.5"/>
+    
+    <!-- Inner Emerald Silk Ring -->
+    <circle cx="0" cy="0" r="66" fill="url(#silkEmerald)"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="url(#goldTrim)" stroke-width="3"/>
+    
+    <!-- Central Grand Kundan Stone with Gold Bezel -->
+    <circle cx="0" cy="0" r="40" fill="url(#goldTrim)"/>
+    <circle cx="0" cy="0" r="35" fill="url(#kundanGlow)"/>
+    <!-- Kundan facet highlights -->
+    <polygon points="0,-25 18,-10 18,10 0,25 -18,10 -18,-10" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8"/>
+    <circle cx="-8" cy="-8" r="4" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+
+  <!-- Right Stud (Pair) -->
+  <g transform="translate(540, 390)" filter="url(#softDropShadow)">
+    <!-- Silk Base Disc -->
+    <circle cx="0" cy="0" r="105" fill="url(#silkRuby)"/>
+    <!-- Thread lines texture -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#C72234" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#9E1222" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="84" fill="none" stroke="#E62C40" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#780816" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+
+    <!-- Outer Pearl Halo -->
+    <g>
+      <circle cx="0" cy="-105" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="41" cy="-97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="74" cy="-74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="97" cy="-41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="105" cy="0" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="97" cy="41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="74" cy="74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="41" cy="97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="0" cy="105" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-41" cy="97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-74" cy="74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-97" cy="41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-105" cy="0" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-97" cy="-41" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-74" cy="-74" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+      <circle cx="-41" cy="-97" r="9" fill="url(#pearlShine)" stroke="url(#goldTrim)" stroke-width="1"/>
+    </g>
+
+    <!-- Gold Rope Ring -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="url(#goldTrim)" stroke-width="4.5"/>
+
+    <!-- Inner Emerald Silk Ring -->
+    <circle cx="0" cy="0" r="66" fill="url(#silkEmerald)"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="url(#goldTrim)" stroke-width="3"/>
+
+    <!-- Central Grand Kundan Stone with Gold Bezel -->
+    <circle cx="0" cy="0" r="40" fill="url(#goldTrim)"/>
+    <circle cx="0" cy="0" r="35" fill="url(#kundanGlow)"/>
+    <polygon points="0,-25 18,-10 18,10 0,25 -18,10 -18,-10" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8"/>
+    <circle cx="-8" cy="-8" r="4" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+</svg>
