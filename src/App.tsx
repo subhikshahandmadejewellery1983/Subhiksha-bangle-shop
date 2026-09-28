@@ -1143,51 +1143,6 @@ export default function App() {
                   <span>Size Finder</span>
                 </button>
               </div>
-
-
-
-              {/* Trust Badges */}
-              <div className="mt-12 pt-8 border-t border-[#E8D8C8]/80 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
-                <div className="flex items-center gap-3 p-2">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Sparkles className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">100% Pure Silk</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">High-twist mulberry yarn</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-2">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Ruler className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Custom Sizing</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Precise 2.2 to 2.10 fits</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-2">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Shield className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Featherlight Comfort</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Zero wrist strain for hours</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-2">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Award className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Artisan Made</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Master handcrafted in India</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
 
@@ -2720,6 +2675,53 @@ export default function App() {
 
       {/* 13. Luxury Footer */}
       <footer className="bg-[#1A1816] text-[#FAF7F2] border-t border-[#332E2A] mt-auto">
+        {/* Brand Guarantees / Trust Badges in Footer */}
+        <div className="border-b border-[#332E2A] bg-black/25">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+              <div className="flex items-center gap-3.5 p-2">
+                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
+                  <Sparkles className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white tracking-wide">100% Pure Silk</h4>
+                  <p className="text-[11px] text-[#A89E94]">High-twist mulberry yarn</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5 p-2">
+                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
+                  <Ruler className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white tracking-wide">Custom Sizing</h4>
+                  <p className="text-[11px] text-[#A89E94]">Precise 2.2 to 2.10 fits</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5 p-2">
+                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white tracking-wide">Featherlight Comfort</h4>
+                  <p className="text-[11px] text-[#A89E94]">Zero wrist strain for hours</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5 p-2">
+                <div className="p-2.5 rounded-full bg-white/5 border border-[#E8D38B]/30 text-[#E8D38B] shrink-0">
+                  <Award className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white tracking-wide">Artisan Made</h4>
+                  <p className="text-[11px] text-[#A89E94]">Master handcrafted in India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
