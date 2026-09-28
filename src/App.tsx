@@ -1219,86 +1219,225 @@ export default function App() {
       {/* 3. Conditional Content Sections */}
       {activeTab === 'shop' && (
         <main className="flex-1">
-          {/* Hero Banner Section */}
-          <section className="relative overflow-hidden bg-gradient-to-b from-[#F4EFE6] to-[#FAF7F2] border-b border-[#E8D8C8] py-14 sm:py-20 px-4">
-            <div className="max-w-6xl mx-auto text-center relative z-10">
-              <span className="text-xs uppercase font-semibold tracking-[0.3em] text-[#9A7416] block mb-3">
-                100% Handcrafted Silk Thread Bangles
+          {/* Hero Flash Sale 4-Panel Promotional Banners */}
+          <section className="relative overflow-hidden bg-[#1A1816] text-[#FAF7F2] border-b border-[#332E2A] py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto mb-6 text-center">
+              <span className="inline-flex items-center gap-2 bg-[#9A7416]/20 border border-[#C59B27]/40 text-[#E8D38B] text-xs uppercase font-semibold tracking-[0.3em] px-4 py-1.5 rounded-full mb-2">
+                <Sparkles className="w-3.5 h-3.5 text-[#E8D38B]" /> Limited Edition Festive & Bridal Flash Sale
               </span>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-luxury font-bold text-[#1A1816] mb-4 leading-tight">
-                Handmade Silk Thread Bangles & Royal Bridal Choodas
+              <h1 className="text-2xl sm:text-4xl font-serif-luxury font-bold text-white tracking-wide">
+                Subhiksha Handmade Silk Thread Bangles — Special Flash Deals
               </h1>
-              <p className="max-w-2xl mx-auto text-sm sm:text-base text-[#68625B] font-light leading-relaxed mb-8">
-                Every piece is individually hand-wrapped in pure lustrous mulberry silk thread, adorned with uncut jadau Kundan stones, micro-seed pearls, and authentic zardozi embroidery. Tailored exclusively to your bangle dimensions and bridal attire.
-              </p>
+            </div>
 
-              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10">
-                <button
-                  onClick={() => {
-                    const el = document.getElementById('catalog-grid');
-                    el?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="px-6 py-3 rounded-full bg-[#114B3E] text-white hover:bg-[#0D382E] text-xs font-semibold uppercase tracking-wider shadow-lg shadow-[#114B3E]/20 transition flex items-center gap-2"
-                >
-                  <span>Explore Bangles</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => setActiveTab('customizer')}
-                  className="px-6 py-3 rounded-full bg-white text-[#9A7416] border border-[#C59B27] hover:bg-[#FAF7F2] text-xs font-semibold uppercase tracking-wider shadow-sm transition flex items-center gap-2"
-                >
-                  <Palette className="w-4 h-4 text-[#C59B27]" />
-                  <span>Customize Your Bangles</span>
-                </button>
-                <button
-                  onClick={() => setActiveTab('sizeguide')}
-                  className="px-6 py-3 rounded-full bg-transparent hover:bg-black/5 text-[#443E38] text-xs font-semibold uppercase tracking-wider transition flex items-center gap-1.5"
-                >
-                  <Ruler className="w-3.5 h-3.5 text-[#9A7416]" />
-                  <span>Size Finder</span>
-                </button>
+            {/* 4-Panel Promotional Banner Grid */}
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              
+              {/* Panel 1: Royal Coin Collection */}
+              <div 
+                onClick={() => { setQuickViewProduct(INITIAL_PRODUCTS[2]); setQuickViewSize('2.6'); }}
+                className="group relative rounded-3xl overflow-hidden border-2 border-[#C59B27] bg-[#7A1C28] text-white p-5 flex flex-col justify-between shadow-2xl cursor-pointer hover:scale-[1.02] transition-transform duration-300 min-h-[380px]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30 pointer-events-none"></div>
+                
+                {/* Top Banner Text */}
+                <div className="relative z-10 text-center space-y-1">
+                  <span className="text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] text-[#E8D38B] block">Royal Coin Collection</span>
+                  <h2 className="text-xl sm:text-2xl font-serif-luxury font-extrabold text-amber-300 drop-shadow-md">FLASH SALE!</h2>
+                  <div className="inline-block bg-[#9A7416] text-white text-xs sm:text-sm font-extrabold px-3 py-1 rounded-full shadow-lg mt-1 tracking-wider uppercase">
+                    50% OFF FOR 2 HOURS ONLY!
+                  </div>
+                </div>
+
+                {/* Center Image */}
+                <div className="relative z-10 my-4 aspect-square rounded-2xl overflow-hidden border border-[#E8D38B]/50 shadow-xl bg-[#22070A]">
+                  <img 
+                    src={INITIAL_PRODUCTS[2].image} 
+                    alt="Royal Coin Collection" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Bottom Banner Text */}
+                <div className="relative z-10 text-center space-y-2">
+                  <div className="text-xs font-bold text-amber-200 tracking-wider">★ 50% OFF FOR 2 HOURS ONLY! ★</div>
+                  <button className="w-full py-2.5 rounded-full bg-[#114B3E] hover:bg-[#0D382E] text-white text-xs font-bold uppercase tracking-wider shadow-md transition">
+                    Shop Royal Kasu • ₹{INITIAL_PRODUCTS[2].price}
+                  </button>
+                </div>
               </div>
 
-              {/* Trust Badges */}
-              <div className="pt-6 border-t border-[#E8D8C8]/80 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
-                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Sparkles className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">100% Pure Silk</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">High-twist mulberry yarn</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Ruler className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Custom Sizing</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Precise 2.2 to 2.10 fits</p>
+              {/* Panel 2: Emerald Splendor */}
+              <div 
+                onClick={() => { setQuickViewProduct(INITIAL_PRODUCTS[1]); setQuickViewSize('2.6'); }}
+                className="group relative rounded-3xl overflow-hidden border-2 border-[#C59B27] bg-[#0A382E] text-white p-5 flex flex-col justify-between shadow-2xl cursor-pointer hover:scale-[1.02] transition-transform duration-300 min-h-[380px]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30 pointer-events-none"></div>
+                
+                {/* Top Banner Text */}
+                <div className="relative z-10 text-center space-y-1">
+                  <span className="text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] text-[#E8D38B] block">Emerald Splendor</span>
+                  <h2 className="text-xl sm:text-2xl font-serif-luxury font-extrabold text-amber-300 drop-shadow-md">FLASH SALE!</h2>
+                  <div className="inline-block bg-[#9A7416] text-white text-xs sm:text-sm font-extrabold px-3 py-1 rounded-full shadow-lg mt-1 tracking-wider uppercase">
+                    💎 40% OFF - NEXT 3 HOURS!
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Shield className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Featherlight Comfort</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Zero wrist strain for hours</p>
+                {/* Center Image */}
+                <div className="relative z-10 my-4 aspect-square rounded-2xl overflow-hidden border border-[#E8D38B]/50 shadow-xl bg-[#031510]">
+                  <img 
+                    src={INITIAL_PRODUCTS[1].image} 
+                    alt="Emerald Splendor" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Bottom Banner Text */}
+                <div className="relative z-10 text-center space-y-2">
+                  <div className="text-xs font-bold text-amber-200 tracking-wider">💎 40% OFF - NEXT 3 HOURS!</div>
+                  <button className="w-full py-2.5 rounded-full bg-[#114B3E] hover:bg-[#0D382E] text-white text-xs font-bold uppercase tracking-wider shadow-md transition">
+                    Shop Emerald Kadas • ₹{INITIAL_PRODUCTS[1].price}
+                  </button>
+                </div>
+              </div>
+
+              {/* Panel 3: Violet Vogue */}
+              <div 
+                onClick={() => { setQuickViewProduct(INITIAL_PRODUCTS[3]); setQuickViewSize('2.6'); }}
+                className="group relative rounded-3xl overflow-hidden border-2 border-[#C59B27] bg-[#3C144F] text-white p-5 flex flex-col justify-between shadow-2xl cursor-pointer hover:scale-[1.02] transition-transform duration-300 min-h-[380px]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30 pointer-events-none"></div>
+                
+                {/* Top Banner Text */}
+                <div className="relative z-10 text-center space-y-1">
+                  <span className="text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] text-[#E8D38B] block">Violet Vogue</span>
+                  <h2 className="text-xl sm:text-2xl font-serif-luxury font-extrabold text-amber-300 drop-shadow-md">FLASH SALE!</h2>
+                  <div className="inline-block bg-[#9A7416] text-white text-xs sm:text-sm font-extrabold px-3 py-1 rounded-full shadow-lg mt-1 tracking-wider uppercase">
+                    UP TO 60% OFF - TODAY ONLY!
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-2.5 bg-white/70 backdrop-blur rounded-2xl border border-[#E8D8C8] shadow-sm">
-                  <div className="p-2 rounded-full bg-white border border-[#E8D8C8] text-[#9A7416]">
-                    <Award className="w-4 h-4" />
+                {/* Center Image */}
+                <div className="relative z-10 my-4 aspect-square rounded-2xl overflow-hidden border border-[#E8D38B]/50 shadow-xl bg-[#14051B]">
+                  <img 
+                    src={INITIAL_PRODUCTS[3].image} 
+                    alt="Violet Vogue" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Bottom Banner Text */}
+                <div className="relative z-10 text-center space-y-2">
+                  <div className="text-xs font-bold text-amber-200 tracking-wider">💜 UP TO 60% OFF - TODAY ONLY!</div>
+                  <button className="w-full py-2.5 rounded-full bg-[#114B3E] hover:bg-[#0D382E] text-white text-xs font-bold uppercase tracking-wider shadow-md transition">
+                    Shop Violet Stack • ₹{INITIAL_PRODUCTS[3].price}
+                  </button>
+                </div>
+              </div>
+
+              {/* Panel 4: Crimson Charm */}
+              <div 
+                onClick={() => { setQuickViewProduct(INITIAL_PRODUCTS[0]); setQuickViewSize('2.6'); }}
+                className="group relative rounded-3xl overflow-hidden border-2 border-[#C59B27] bg-[#8B1824] text-white p-5 flex flex-col justify-between shadow-2xl cursor-pointer hover:scale-[1.02] transition-transform duration-300 min-h-[380px]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30 pointer-events-none"></div>
+                
+                {/* Top Banner Text */}
+                <div className="relative z-10 text-center space-y-1">
+                  <span className="text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] text-[#E8D38B] block">Crimson Charm</span>
+                  <h2 className="text-xl sm:text-2xl font-serif-luxury font-extrabold text-amber-300 drop-shadow-md">FLASH SALE!</h2>
+                  <div className="inline-block bg-[#9A7416] text-white text-xs sm:text-sm font-extrabold px-3 py-1 rounded-full shadow-lg mt-1 tracking-wider uppercase">
+                    30% OFF - DON'T MISS OUT!
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-[#1A1816]">Artisan Made</h4>
-                    <p className="text-[11px] text-[#8C7A6B]">Master handcrafted in India</p>
-                  </div>
+                </div>
+
+                {/* Center Image */}
+                <div className="relative z-10 my-4 aspect-square rounded-2xl overflow-hidden border border-[#E8D38B]/50 shadow-xl bg-[#2A050A]">
+                  <img 
+                    src={INITIAL_PRODUCTS[0].image} 
+                    alt="Crimson Charm" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Bottom Banner Text */}
+                <div className="relative z-10 text-center space-y-2">
+                  <div className="text-xs font-bold text-amber-200 tracking-wider">🔴 30% OFF - DON'T MISS OUT!</div>
+                  <button className="w-full py-2.5 rounded-full bg-[#114B3E] hover:bg-[#0D382E] text-white text-xs font-bold uppercase tracking-wider shadow-md transition">
+                    Shop Bridal Chooda • ₹{INITIAL_PRODUCTS[0].price}
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Quick Action Navigation Buttons */}
+            <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-[#332E2A] flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              <button
+                onClick={() => {
+                  const el = document.getElementById('catalog-grid');
+                  el?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="px-6 py-3 rounded-full bg-[#114B3E] text-white hover:bg-[#0D382E] text-xs font-semibold uppercase tracking-wider shadow-lg transition flex items-center gap-2"
+              >
+                <span>Explore All Bangles</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setActiveTab('customizer')}
+                className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/25 text-white border border-[#E8D38B]/40 text-xs font-semibold uppercase tracking-wider transition flex items-center gap-2"
+              >
+                <Palette className="w-4 h-4 text-[#E8D38B]" />
+                <span>Customize Your Bangles</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('sizeguide')}
+                className="px-6 py-3 rounded-full bg-transparent hover:bg-white/5 text-[#D4C5B9] text-xs font-semibold uppercase tracking-wider transition flex items-center gap-1.5"
+              >
+                <Ruler className="w-3.5 h-3.5 text-[#E8D38B]" />
+                <span>Size Finder</span>
+              </button>
+            </div>
+
+            {/* Trust Badges Bar below Banner */}
+            <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-[#332E2A] grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+              <div className="flex items-center gap-3 p-3 bg-white/5 rounded-2xl border border-white/10">
+                <div className="p-2.5 rounded-full bg-[#E8D38B]/10 text-[#E8D38B]">
+                  <Sparkles className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white">100% Pure Silk</h4>
+                  <p className="text-[11px] text-[#A89E94]">High-twist mulberry yarn</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 p-3 bg-white/5 rounded-2xl border border-white/10">
+                <div className="p-2.5 rounded-full bg-[#E8D38B]/10 text-[#E8D38B]">
+                  <Ruler className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white">Custom Sizing</h4>
+                  <p className="text-[11px] text-[#A89E94]">Precise 2.2 to 2.10 fits</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 p-3 bg-white/5 rounded-2xl border border-white/10">
+                <div className="p-2.5 rounded-full bg-[#E8D38B]/10 text-[#E8D38B]">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white">Featherlight Comfort</h4>
+                  <p className="text-[11px] text-[#A89E94]">Zero wrist strain for hours</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 p-3 bg-white/5 rounded-2xl border border-white/10">
+                <div className="p-2.5 rounded-full bg-[#E8D38B]/10 text-[#E8D38B]">
+                  <Award className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-white">Artisan Made</h4>
+                  <p className="text-[11px] text-[#A89E94]">Master handcrafted in India</p>
                 </div>
               </div>
             </div>
